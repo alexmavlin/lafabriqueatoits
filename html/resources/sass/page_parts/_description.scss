@@ -1,0 +1,93 @@
+.description {
+    padding-top: 60px;
+    padding-bottom: 160px;
+    overflow: hidden;
+    &__inner {
+        position: relative;
+        svg {
+            position: absolute;
+            z-index: 0;
+            right: 0;
+            width: 750px !important;
+            height: 700px !important;
+            top: 0;
+            opacity: 0.25;
+            width: 700px;
+            height: 700px;
+        }
+    }
+    &__heading {
+        font-family: 'Playfair Display SC';
+        color: #0B0E3D;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 75px;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        position: relative;
+        z-index: 1;
+    }
+    &__p {
+        color: #333;
+        font-family: 'Avenir LT Std';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        max-width: 1060px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1106px) {
+    .description__heading {
+        font-family: 'Playfair Display SC';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 33.6px */
+        letter-spacing: 1.68px;
+        text-align: center;
+    }
+    .description__p {
+        font-family: 'Avenir LT Std';
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+    .description__inner {
+        svg {
+            height: 100% !important;
+            width: unset !important;
+            aspect-ratio: 1 / 1 !important;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .description__heading {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 590px) {
+    .description__inner {
+        svg {
+            height: unset !important;
+            width: 100% !important;
+            aspect-ratio: 1 / 1 !important;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

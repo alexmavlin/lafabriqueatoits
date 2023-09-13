@@ -1,0 +1,81 @@
+
+<table>
+    <caption style="margin-bottom:15px;">{!! $data['content']->p_items_desc !!}</caption>
+
+    <thead>
+        <tr>
+            <th>Ville</th>
+            <th>Rénové Min<br>€ / m2</th>
+            <th>Rénové Max<br>€ / m2</th>
+            <th>Loyer par Mois<br>€ / m2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Chilly-Mazarin</td>
+            <td>2070</td>
+            <td>2730</td>
+            <td>17,2</td>
+        </tr>
+        <tr>
+            <td>Corbeil-Essonnes</td>
+            <td>1990</td>
+            <td>2710</td>
+            <td>15,1</td>
+        </tr>
+        <tr>
+            <td>Etampes</td>
+            <td>2180</td>
+            <td>3440</td>
+            <td>16,4</td>
+        </tr>
+        <tr>
+            <td>Gif-sur-Yvette</td>
+            <td>3420</td>
+            <td>4610</td>
+            <td>16.9</td>
+        </tr>
+        <tr>
+            <td>Grigny</td>
+            <td>1080</td>
+            <td>1480</td>
+            <td>14.4</td>
+        </tr>
+        <tr>
+            <td>Longjumeau</td>
+            <td>2390</td>
+            <td>3270</td>
+            <td>16,4</td>
+        </tr>
+        <tr>
+            <td>Orsay</td>
+            <td>3360</td>
+            <td>4410</td>
+            <td>16,4</td>
+        </tr>
+        <tr>
+            <td>Palaiseau</td>
+            <td>3130</td>
+            <td>4460</td>
+            <td>18,4</td>
+        </tr>
+        <tr>
+            <td>Ris-Orangis</td>
+            <td>1700</td>
+            <td>2360</td>
+            <td>14,2</td>
+        </tr>
+        <tr>
+            <td>Savigny-sur-Orge</td>
+            <td>2050</td>
+            <td>3510</td>
+            <td>17,6</td>
+        </tr>
+        <tr>
+            <td>Viry-Châtillon</td>
+            <td>2270</td>
+            <td>3100</td>
+            <td>15,2</td>
+        </tr>
+    </tbody>
+</table>

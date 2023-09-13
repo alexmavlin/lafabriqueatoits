@@ -1,0 +1,160 @@
+.homePageFAQ {
+    padding: 80px 0px;
+    background: #0B0E3D;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        div + div {
+            margin-top: 24px;
+        }
+    }
+    &__h2 {
+        font-family: 'Playfair Display SC';
+        color: #DAB56B;
+        text-align: center;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 72px */
+        letter-spacing: 3.6px;
+        margin-bottom: 46px;
+    }
+    &__item {
+        border-radius: 12px;
+        background: #FFF;
+        padding: 24px 24px 24px 88px;
+        max-width: 1059px;
+        width: 100%;
+        position: relative;
+        h3 {
+            font-family: 'Playfair Display SC';
+            color: #333;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 33.6px */
+            margin-bottom: 16px;
+            cursor: pointer;
+        }
+        p,
+        ul {
+            font-family: 'Avenir LT Std';
+            color: #595959;
+            max-height: 0;
+            overflow: hidden;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%; /* 38.4px */
+            letter-spacing: 0.96px;
+            transition: max-height .8s ease-in-out;
+            margin-bottom: 12px;
+            &.active {
+                max-height: 600px;
+            }
+            li {
+                margin-bottom: 12px;
+                padding-left: 30px;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    background-color: #000;
+                    top: 16px;
+                    left: 6px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    &__item--icon__btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background: #DAB56B;
+        top: 24px;
+        left: 24px;
+        cursor: pointer;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 4px;
+            background-color: #000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &::after {
+            width: 4px;
+            height: 20px;
+            opacity: 1;
+            transition: opacity .2s ease-in-out;
+        }
+        &.active::after {
+            opacity: 0;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .homePageFAQ__item p 
+    .homePageFAQ__item li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 620px) {
+    .homePageFAQ {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .homePageFAQ__h2 {
+        font-family: 'Playfair Display SC';
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 33.6px */
+        letter-spacing: 1.68px;
+    }
+    .homePageFAQ__item h3 {
+        font-family: 'Playfair Display SC';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+    }
+    .homePageFAQ__item p,
+    .homePageFAQ__item li {
+        font-family: 'Avenir LT Std';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+        &.active {
+            max-height: 500px;
+        }
+    }
+    .homePageFAQ__item ul li::before {
+        width: 6px;
+        height: 6px;
+        top: 8px;
+    }
+    .homePageFAQ__item--icon__btn {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 370px) {
+    .homePageFAQ__item p.active {
+        max-height: 500px;
+    }
+}

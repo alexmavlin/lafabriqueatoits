@@ -1,0 +1,111 @@
+.investment {
+    display: flex;
+}
+.investment__img {
+    max-width: 815px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.202;
+    object-fit: cover;
+}
+
+.investment__content {
+    padding: 48px 20px;
+    background-color: #DAB56B;
+    width: 100%;
+}
+.investment__h1 {
+    max-width: 1150px;
+    width: 100%;
+    color: #FAFAFA;
+    font-family: 'Playfair Display SC';
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 112.8px */
+    letter-spacing: 5.64px;
+    margin-bottom: 16px;
+}
+.investment__p {
+    max-width: 925px;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+
+@media (max-width: 1550px) {
+    .investment__h1 {
+        font-size: 75px;
+    }
+    .investment__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1400px) {
+    .investment__img {
+        width: 700px !important;
+    }
+    .investment__h1 {
+        font-size: 69px;
+    }
+}
+@media (max-width: 1280px) {
+    .investment__img {
+        width: 400px !important;
+    }
+    .investment__h1 {
+        max-width: 600px;
+        font-size: 56px;
+    }
+    .investment__p {
+        max-width: 600px;
+        font-size: 17px;
+    }
+}
+@media (max-width: 890px) {
+    .investment {
+        flex-direction: column-reverse;
+    }
+    .investment__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .investment__h1,
+    .investment__p {
+        text-align: center;
+    }
+    .investment__h1 {
+        font-size: 40px;
+    }
+    .investment__p {
+        font-size: 16px;
+    }
+    .investment__img {
+        max-width: 100%;
+        width: 100% !important;
+        height: 444px !important;
+        aspect-ratio: unset;
+    }
+}
+@media (max-width: 450px) {
+    .investment__content {
+        padding: 24px 20px;
+    }
+    .investment__h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2.16px;
+    }
+    .investment__p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.56px;
+    }
+}

@@ -1,0 +1,24 @@
+<section class="description">
+    <div class="container">
+        <div class="description__inner">
+            <h1 class="description__heading">Chasseur immobilier: <br>trouvez votre perle rare!</h1>
+            <p class="description__p">À Paris et en Île-de-France depuis 2015, La Fabrique à Toits est bien plus qu'un simple chasseur immobilier Nous sommes votre partenaire sur mesure pour vivre une aventure immobilière unique! Notre mission: rendre l'achat, la vente ou l'investissement dans l'immobilier aussi facile et agréable que de faire du shopping en ligne. Notre équipe de chasseurs d’appartements vous accompagne à chaque étape, telle une «dream team». De la recherche à la signature, on gère tout, en mode super-héros administratifs et juridiques. Imaginez un chasseur immobilier qui vous trouve le bien de vos rêves, vous conseille avec passion et défend vos intérêts. On saute par-dessus les obstacles et on vous garantit un investissement immobilier sûr! Que vous cherchiez Un bien ancien ou un bien au sein d’un programme immobilier neuf, on est là pour dénicher votre perle rare. Et avec Sarah, notre fondatrice experte depuis 2006, c'est un voyage immobilier rempli de sourires et de succès assurés! Alors, prêt à vivre une expérience immobilière unique et fun avec nous? Contactez-nous pour un accompagnement personnalisé et des étoiles plein les yeux!</p>
+            <svg class="description__watermark" xmlns="http://www.w3.org/2000/svg" width="848" height="848" viewBox="0 0 848 848" fill="none">
+                <path d="M848 424.021C848 427.974 847.958 431.884 847.832 435.795C845.099 536.712 807.086 628.757 745.695 700.198C667.947 790.687 552.649 848 423.979 848C307.58 848 202.095 801.088 125.583 725.158C124.237 723.823 124.17 721.672 125.418 720.245L142.756 700.408L180.291 657.371C181.695 655.761 184.178 655.718 185.665 657.251C186.802 658.422 187.956 659.581 189.136 660.714C191.074 662.693 193.012 664.555 194.987 666.375C195.151 666.526 195.298 666.693 195.461 666.844C195.537 666.914 195.616 666.984 195.696 667.064C197.588 668.872 199.48 670.638 201.414 672.32C203.18 673.876 204.946 675.431 206.754 676.987C208.184 678.249 209.656 679.51 211.127 680.688C212.599 681.949 214.113 683.168 215.627 684.346C217.603 685.986 219.621 687.541 221.682 689.139C223.658 690.611 225.676 692.125 227.695 693.596C230.806 695.867 234.002 698.096 237.198 700.282C290.474 736.402 354.767 757.469 423.979 757.469C493.191 757.469 557.442 736.402 610.718 700.324C610.923 700.202 611.087 700.079 611.29 699.879C611.301 699.868 611.315 699.862 611.331 699.862C611.343 699.862 611.354 699.858 611.364 699.852C629.607 687.492 646.548 673.325 661.892 657.603C721.012 597.515 757.469 515.015 757.469 424.021C757.469 406.066 756.039 388.406 753.306 371.208C727.992 212.137 590.198 90.5313 423.979 90.5313C239.805 90.5313 90.4892 239.847 90.4892 424.021C90.4892 444.439 92.3184 464.45 95.8247 483.842C96.3377 486.679 99.816 487.733 101.855 485.694L357.972 229.578C359.383 228.166 361.671 228.166 363.083 229.578L626.454 492.991C627.866 494.402 627.865 496.69 626.454 498.101L566.978 557.578C565.566 558.989 563.278 558.989 561.867 557.578L363.083 358.794C361.671 357.382 359.383 357.382 357.972 358.794L146.632 570.134C145.954 570.811 145.035 571.192 144.076 571.192H124.675L28.8203 571.315C27.3172 571.317 25.9662 570.39 25.4446 568.98C24.8222 567.298 24.2185 565.597 23.6735 563.876C8.32568 520.103 0 473.05 0 424.021C0 189.851 189.809 0 423.979 0C658.149 0 848 189.851 848 424.021Z" fill="url(#paint0_linear_438_8150)"/>
+                <path d="M405.688 550.964C405.688 548.968 404.07 547.35 402.074 547.35H317.551C315.555 547.35 313.937 548.968 313.937 550.964V650.373C313.937 652.368 315.555 653.986 317.551 653.986H402.074C404.07 653.986 405.688 652.368 405.688 650.373V550.964Z" fill="url(#paint1_linear_438_8150)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_438_8150" x1="-201.966" y1="-219.444" x2="1031.19" y2="1115.99" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.198761" stop-color="#DAB56B" stop-opacity="0"/>
+                    <stop offset="0.492939" stop-color="#DAB56B"/>
+                    <stop offset="0.803512" stop-color="#DAB56B" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_438_8150" x1="-201.966" y1="-219.444" x2="1031.19" y2="1115.99" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.198761" stop-color="#DAB56B" stop-opacity="0"/>
+                    <stop offset="0.492939" stop-color="#DAB56B"/>
+                    <stop offset="0.803512" stop-color="#DAB56B" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,414 @@
+
+/* Whu Us Banner */
+.whyUsBanner {
+    background-color: #DAB56B;
+    overflow: hidden;
+    &__inner {
+        padding: 87px 0px;
+        position: relative;
+    }
+    &__h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Playfair Display SC';
+        font-size: 94px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 112.8px */
+        letter-spacing: 5.64px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 16px;
+    }
+    &__p {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        position: relative;
+        z-index: 2;
+    }
+    &__watermark {
+        position: absolute;
+        width: 932px;
+        height: 932px;
+        left: 0;
+        top: 43px;
+        fill: linear-gradient(137deg, rgba(11, 14, 61, 0.00) 19.88%, #0B0E3D 49.29%, rgba(11, 14, 61, 0.00) 80.35%);
+        opacity: 0.2;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 1600px) {
+    .whyUsBanner__h2 {
+        font-size: 50px;
+    }
+    .whyUsBanner__p {
+        font-size: 18px;
+    }
+    .whyUsBanner__watermark {
+        width: 650px;
+        height: 650px;
+    }
+}
+@media (max-width: 945px) {
+    .whyUsBanner__h2 {
+        font-size: 45px;
+    }
+    .whyUsBanner__p {
+        font-size: 14px;
+    }
+    .whyUsBanner__watermark {
+        width: 450px;
+        height: 450px;
+    }
+}
+@media (max-width: 545px) {
+    .whyUsBanner__h2 {
+        font-size: 36px;
+    }
+    .whyUsBanner__inner {
+        padding: 24px 0px;
+    }
+    .whyUsBanner__watermark {
+        width: 408px;
+        height: 408px;
+        top: unset;
+        left: -54;
+        bottom: -154px;
+    }
+}
+/* // Why Us Banner */
+
+/* Advantages */
+.advantages {
+    padding-top: 120px;
+    &__row {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 270px;
+        margin-bottom: 95px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__row {
+        &.reverse {
+            justify-content: flex-start;
+            & .advantages__img {
+                left: unset;
+                right: 0;
+            }
+        }
+    }
+    &__article {
+        max-width: 1060px;
+        width: 100%;
+        padding: 24px;
+        gap: 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(224, 224, 224, 0.40);
+        background: #FAFAFA;
+        position: relative;
+        z-index: 2;
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__h3 {
+        color:#0F135A;
+        font-family: 'Playfair Display SC';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 50.4px */
+        letter-spacing: 2.52px;
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    &__p {
+        color: #595959;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    &__ul {
+        margin-left: 24px;
+        li {
+            list-style: disc;
+            color: #595959;
+            font-family: 'Avenir LT Std';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%; /* 38.4px */
+            letter-spacing: 0.96px;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .advantages__h3 {
+        font-size: 35px;
+    }
+    .advantages__p {
+        font-size: 20px;
+    }
+    .advantages__ul li {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1600px) {
+    .advantages__img {
+        width: 800px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.432;
+        object-fit: cover;
+    }
+    .advantages__article {
+        max-width: 800px;
+    }
+    .advantages__h3 {
+        font-size: 30px;
+    }
+    .advantages__p {
+        font-size: 16px;
+    }
+    .advantages__ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 890px) {
+    .advantages__row,
+    .advantages__row.reverse {
+        justify-content: center;
+    }
+    .advantages__img {
+        width: 100% !important;
+    }
+    .advantages__article {
+        max-width: 90%;
+    }
+}
+@media (max-width: 790px) {
+    .advantages__row {
+        padding-top: 150px;
+    }
+}
+@media (max-width: 550px) {
+    .advantages__h3 {
+        font-size: 20px;
+    }
+    .advantages__p,
+    .advantages__ul li {
+        font-size: 14px;
+    }
+}
+@media (max-width: 470px) {
+    .advantages__row {
+        padding-top: 200px;
+    }
+    .advantages__img {
+        aspect-ratio: 1 / 0.864;
+    }
+}
+/* // Advantages */
+
+/* How it Works */
+.howItWorks {
+    padding: 38px 0px 120px;
+    overflow: hidden;
+    margin-bottom: 120px;
+    &__inner {
+        position: relative;
+    }
+    &__content {
+        max-width: 790px;
+        width: 100%;
+        margin-right: 20px;
+        position: relative;
+        z-index: 2;
+    }
+    &__h2 {
+        color: #DAB56B;
+        font-family: 'Playfair Display SC';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 72px */
+        letter-spacing: 3.6px;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 2;
+        max-width: 790px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 260px;
+            height: 1px;
+            background-color: #DAB56B;
+            left: 0;
+            bottom: -16px;
+        }
+    }
+    &__p {
+        color: #333;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
+        max-width: 790px;
+    }
+    &__tab {
+        border-radius: 8px;
+        background: #FFF;
+        padding: 24px;
+        gap: 16px;
+        width: 790px;
+        transition: width .3s ease-in-out;
+        cursor: pointer;
+        &.active {
+            border: 2px solid #DAB56B;
+            background: #FAFAFA;
+            box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+            border-radius: 0;
+            width: 926px;
+            .howItWorks__h3 {
+                color: #DAB56B;
+                font-family: 'Playfair Display SC';
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 50.4px */
+                letter-spacing: 2.52px;
+                margin-bottom: 16px;
+            }
+            .howItWorks__tab--p {
+                max-height: 400px;
+            }
+        }
+    }
+    &__h3 {
+        color: #333;
+        font-family: 'Playfair Display SC';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 43.2px */
+        letter-spacing: 2.16px;
+    }
+    &__tab--p {
+        color: #595959;
+        font-family: 'Avenir LT Std';
+        overflow: hidden;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        padding-left: 45px;
+        max-height: 0;
+        transition: max-height .3s ease-in-out
+    }
+    &__img {
+        position: absolute;
+        left: 810px;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1600px) {
+    .howItWorks__h2 {
+        font-size: 45px;
+    }
+    .howItWorks__p {
+        font-size: 20px;
+    }
+    .howItWorks__tab,
+    .howItWorks__tab.active .howItWorks__h3 {
+        font-size: 35px;
+    }
+    .howItWorks__tab.active .howItWorks__tab--p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .howItWorks {
+        padding-bottom: 0;
+    }
+    .howItWorks__inner {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .howItWorks__img {
+        position: unset;
+        width: 100% !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.85;
+        object-fit: cover;
+        margin-bottom: 40px;
+    }
+    .howItWorks__h2 {
+        text-align: center;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .howItWorks__p {
+        text-align: center;
+    }
+    .howItWorks__tab.active {
+        max-width: 550px;
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .howItWorks__h2 {
+        font-size: 28px;
+    }
+    .howItWorks__p {
+        font-size: 14px;
+    }
+    .howItWorks__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    .howItWorks__tab {
+        max-width: 600px;
+        width: 100%;
+    }
+    .howItWorks__h3,
+    .howItWorks__tab.active .howItWorks__h3 {
+        font-size: 20px;
+    }
+    .howItWorks__tab.active .howItWorks__tab--p {
+        font-size: 14px;
+        padding-left: 27px;
+    }
+}
+/* // How it Works */

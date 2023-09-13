@@ -1,0 +1,145 @@
+.whereToInvest2 {
+    padding-top: 120px;
+    padding-bottom: 180px;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__item {
+        flex-grow: 1;
+        max-width: 32.5%;
+        width: 100%;
+        position: relative;
+        aspect-ratio: 1 / 0.6538;
+        display: flex;
+        margin-bottom: 40px;
+        padding: 12px;
+    }
+    &__item:first-child {
+        flex-grow: 1;
+        max-width: 100%;
+        aspect-ratio: unset;
+        min-height: 340px;
+        .whereToInvest2__img {
+            height: 340px !important;
+        }
+    }
+    &__img {
+        width: 100% !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.6538;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &__item--content {
+        margin-top: auto;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    &__item--p {
+        padding-left: 44px;
+        position: relative;
+        color: #FFF;
+        font-family: 'Playfair Display SC';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 28.8px */
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            padding: 4px 6px;
+            border-radius: 5.333px;
+            background: #C79F4F;
+        }
+    }
+    &__item--a {
+        padding: 24px 40px;
+        border: 1px solid #DAB56B;
+        background: #DAB56B;
+        color: #0B0E3D;
+        font-family: 'Avenir LT Std';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 25.2px */
+        letter-spacing: 2.16px;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width: 1600px) {
+    .whereToInvest2 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .whereToInvest2__item--p {
+        font-size: 20px;
+    }
+    .whereToInvest2__item--a {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+}
+@media (max-width: 1190px) {
+    .whereToInvest2__item {
+        max-width: 48%;
+    }
+}
+@media (max-width: 850px) {
+    .whereToInvest2__item,
+    .whereToInvest2__img {
+        max-width: 100%;
+        aspect-ratio: unset;
+        height: 340px !important;
+    }
+}
+@media (max-width: 600px) {
+    .whereToInvest2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .whereToInvest2__item--p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+        letter-spacing: 1.2px;
+        padding-left: unset;
+        padding-top: 46px;
+        margin-bottom: 16px;
+        br {
+            display: none;
+        }
+    }
+    .whereToInvest2__item--a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 1.28px;
+        padding: 12px;
+        text-align: center;
+    }
+    .whereToInvest2__item--content {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+    }
+}

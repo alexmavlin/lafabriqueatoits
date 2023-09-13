@@ -1,0 +1,143 @@
+.blogWidget {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    &__items--wrapper {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        div + div {
+            margin-left: 10px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 520px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #E0E0E0;
+        background: #FFF;
+
+/* card shadow 1 */
+box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__item--img {
+        width: 100% !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.802;
+        margin-bottom: 8px;
+    }
+    &__item--date {
+        font-family: 'Avenir LT Std';
+        padding: 0px 16px;
+        color: #595959;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+    }
+    &__item--h3 {
+        font-family: 'Playfair Display SC';
+        padding: 0px 16px;
+        color: #DAB56B;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 33.6px */
+        margin-bottom: 12px;
+    }
+    &__item--p {
+        font-family: 'Avenir LT Std';
+        padding: 0px 16px;
+        overflow: hidden;
+        color: #0B0E3D;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 12px;
+    }
+    &__item--link {
+        font-family: 'Avenir LT Std';
+        margin: auto 16px 16px;
+        border: #DAB56B;
+        background: #DAB56B;
+        text-align: center;
+        padding: 24px 40px;
+        color: #0B0E3D;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 25.2px */
+        letter-spacing: 2.16px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1600px) {
+    .blogWidget__item--p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1160px){
+    .blogWidget__items--wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blogWidget__item {
+        max-width: 90%;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 695px) {
+    .blogWidget {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .blogWidget__items--wrapper {
+        margin-top: 40px;
+    }
+    .blogWidget__item--date {
+        font-family: 'Avenir LT Std';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 19.2px */
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
+    .blogWidget__item--h3 {
+        font-family: 'Playfair Display SC';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+    }
+    .blogWidget__item--p {
+        font-family: 'Avenir LT Std';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+    .blogWidget__item--link {
+        padding: 12px;
+        font-family: 'Avenir LT Std';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 1.28px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 350px) {
+    .blogWidget__item {
+        max-width: 95%;
+    }
+}

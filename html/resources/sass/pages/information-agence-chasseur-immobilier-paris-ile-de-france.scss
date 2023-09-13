@@ -1,0 +1,359 @@
+/* Comment Pouvons Section */
+.commentPouvons {
+    padding: 64px 0 64px 0;
+    background-color: #DAB56B;
+    &__h1 {
+        color: #FAFAFA;
+        text-align: center;
+        font-family: 'Playfair Display SC';
+        font-size: 94px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 112.8px */
+        letter-spacing: 5.64px;
+        margin-bottom: 16px;
+    }
+    &__p {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .commentPouvons__h1 {
+        font-size: 50px;
+    }
+    .commentPouvons__p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 820px) {
+    .commentPouvons {
+        padding: 24px 0;
+    }
+    .commentPouvons__h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 120%; /* 43.2px */
+        letter-spacing: 2.16px;
+    }
+    .commentPouvons__p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+}
+
+/* // Comment Pouvons Section */
+
+/* Nos Conseils Section */
+.nosConseils {
+    padding: 60px 0px 120px;
+    background-color: #0B0E3D;
+    &__h2 {
+        color: #DAB56B;
+        text-align: center;
+        font-family: 'Playfair Display SC';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 72px */
+        letter-spacing: 3.6px;
+        margin-bottom: 16px;
+    }
+    &__p {
+        color: #E0E0E0;
+        text-align: center;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 80px;
+    }
+    &__row {
+        padding-top: 200px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: 77px;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        max-width: 866px;
+        width: 100%;
+        padding: 24px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        border: 1px solid rgba(224, 224, 224, 0.40);
+        background: #FAFAFA;
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__h3 {
+        color: #0F135A;
+        font-family: 'Playfair Display SC';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 50.4px */
+        letter-spacing: 2.52px;
+        margin-bottom: 16px;
+    }
+    &__content--p {
+        color: #595959;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 16px;
+    }
+    &__a {
+        @include en-savior-a;
+        display: inline-block;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 1600px) {
+    .nosConseils__h2 {
+        font-size: 50px;
+    }
+    .nosConseils__p {
+        font-size: 20px;
+    }
+    .nosConseils__h3 {
+        font-size: 35px;
+        margin-bottom: unset;
+    }
+    .nosConseils__content--p {
+        font-size: 20px;
+        margin-bottom: unset;
+    }
+    .nosConseils__a {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 840px) {
+    .nosConseils__row {
+        justify-content: center;
+    }
+    .nosConseils__img {
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: cover;
+    }
+    .nosConseils__content {
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .nosConseils {
+        padding: 24px 0;
+    }
+    .nosConseils__row + .nosConseils__row {
+        margin-bottom: unset;
+    }
+    .nosConseils__h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 120%; /* 33.6px */
+        letter-spacing: 1.68px;
+    }
+    .nosConseils__p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+    .nosConseils__row {
+        padding-top: 135px;
+    }
+    .nosConseils__img {
+        height: 200px !important;
+    }
+    .nosConseils__h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 1.44px;
+    }
+    .nosConseils__content--p {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+    .nosConseils__a {
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+/* // Nos Conseils Section */
+
+
+/* Nos secteurs géo Section */
+.nosSecteurs {
+    padding-top: 120px;
+    &__row{
+        div + div {
+            margin-left: 20px;
+        }
+        display: flex;
+        margin-top: 20px;
+    }
+    &__item {
+        width: 100%;
+        flex-grow: 1;
+        padding: 12px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        aspect-ratio: 1 / 0.4303;
+        overflow: hidden;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 790px;
+        width: 100% !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.4303;
+        object-fit: cover;
+        z-index: 1;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+    }
+    &__links {
+        margin-left: auto;
+    }
+    &__index {
+        color: #FFF;
+        font-family: 'Playfair Display SC';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 50.4px */
+        letter-spacing: 2.52px;
+        padding-left: 44px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            padding: 7px;
+            border-radius: 5.333px;
+            background: #C79F4F;
+            transform: translateY(-50%);
+        }
+    }
+    &__links {
+        display: flex;
+        a + a {
+            margin-left: 12px;
+        }
+        a {
+            width: 217px;
+            padding: 24px 15px;
+            border: 1px solid #DAB56B;
+            background: #DAB56B;
+            text-align: center;
+            color: #0B0E3D;
+            font-family: 'Avenir LT Std';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 25.2px */
+            letter-spacing: 2.16px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .nosSecteurs {
+        padding-top: 70px;
+    }
+    .nosSecteurs__index {
+        font-size: 32px;
+    }
+    .nosSecteurs__links a {
+        font-size: 14px;
+        padding: 10px 5px;
+        width: 175px;
+    }
+}
+@media (max-width: 1190px) {
+    .nosSecteurs__row {
+        flex-direction: column;
+    }
+    .nosSecteurs__img {
+        max-width: unset;
+    }
+    .nosSecteurs__row div + div {
+        margin-left: unset;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .nosSecteurs__index {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 1.44px;
+        padding-left: 32px;
+        svg {
+            width: 24px;
+            height: 24px;
+            padding: 6px;
+        }
+    }
+    .nosSecteurs__links a {
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 140%; /* 11.2px */
+        letter-spacing: 0.96px;
+        padding: 7px 5px;
+        width: 96px;
+    }
+}
+
+@media (max-width: 560px) {
+    .nosSecteurs__item {
+        height: 212px;
+    }
+    .nosSecteurs__img {
+        aspect-ratio: unset;
+        height: 212px !important;
+    }
+}
+/* // Nos secteurs géo Section */

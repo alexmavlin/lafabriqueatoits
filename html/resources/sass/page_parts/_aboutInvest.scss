@@ -1,0 +1,114 @@
+.aboutInvest {
+    &__row {
+        position: relative;
+        margin-bottom: 100px;
+        padding-bottom: 260px;
+        &.reverse {
+            display: flex;
+            justify-content: flex-end;
+            .aboutInvest__img {
+                left: 0;
+            }
+        }
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__content {
+        max-width: 1195px;
+        width: 100%;
+        padding: 24px 24px 200px 24px;
+        gap: 16px;
+        border-radius: 8px;
+        border: 1px solid #DAB56B;
+        background: #FAFAFA;
+        box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+    }
+    &__h2 {
+        color: #0F135A;
+        font-family: 'Playfair Display SC';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 50.4px */
+        letter-spacing: 2.52px;
+        margin-bottom: 16px;
+    }
+    &__p {
+        margin-bottom: 20px;
+    }
+    &__ul {
+        margin-bottom: 20px;
+    }
+    &__p,
+    &__ul li {
+        color: #595959;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+    }
+    &__ul li {
+        list-style: disc;
+        margin-left: 24px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .aboutInvest__img {
+        width: 980px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 0.3157;
+        object-fit: cover;
+    }
+    .aboutInvest__content {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .aboutInvest__h2 {
+        font-size: 32px;
+    }
+    .aboutInvest__p, .aboutInvest__ul li {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1130px) {
+    .aboutInvest__img,
+    .aboutInvest__row.reverse .aboutInvest__img {
+        width: 90% !important;
+        height: 290px !important;
+        right: unset !important;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 650px) {
+    .aboutInvest__row {
+        padding-bottom: 100px;
+    }
+    .aboutInvest__img, .aboutInvest__row.reverse .aboutInvest__img {
+        width: 100% !important;
+        height: 180px !important;
+    }
+    .aboutInvest__h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 1.44px;
+    }
+    .aboutInvest__p, .aboutInvest__ul li {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+    }
+}

@@ -1,0 +1,33 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "global.scss";
+
+/* Layouts */
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+
+/* Page parts */
+@import "page_parts/_main.scss";
+@import "page_parts/_description.scss";
+@import "page_parts/_whyUs.scss";
+@import "page_parts/_services.scss";
+@import "page_parts/_whereToInvest.scss";
+@import "page_parts/_housingWidget.scss";
+@import "page_parts/_homePageFAQ.scss";
+@import "page_parts/_blogWidget.scss";
+@import "page_parts/_reviewSlider.scss";
+@import "page_parts/_breadcrumbs.scss";
+@import "page_parts/_investment.scss";
+@import "page_parts/_advantages.scss";
+@import "page_parts/_notre.scss";
+@import "page_parts/_aboutInvest.scss";
+@import "page_parts/contact-form-main";
+@import "page_parts/whereToInvest2";
+
+/* Pages */
+@import "pages/acheter-appartement-paris-ile-de-france";
+@import "pages/information-agence-chasseur-immobilier-paris-ile-de-france.scss";
+@import "pages/agence-immobiliere-hauts-de-seine-92.scss";
+@import "pages/equipe-chasseur-maison-appartement-ile-de-france.scss";
+@import "pages/immobilier-neuf-ile-de-france";
+@import "pages/listing-page.scss"

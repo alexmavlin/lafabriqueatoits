@@ -1,0 +1,255 @@
+
+.reviewSlider {
+    position: relative;
+    &__h2 {
+        color: #DAB56B;
+        text-align: center;
+        font-family: 'Playfair Display SC';
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 72px */
+        letter-spacing: 3.6px;
+        margin-bottom: 40px;
+    }
+    &__prevBtn,
+    &__nextBtn {
+        position: absolute;
+        border: none;
+        top: 50%;
+        left: 6%;
+        z-index: 50;
+        width: 80px;
+        height: 80px;
+        padding: 12px 12px;
+        border-radius: 12px;
+        background: #0B0E3D;
+        cursor: pointer;
+    }
+    &__nextBtn {
+        left: unset;
+        right: 6%;
+    }
+    &__inner {
+        position: relative;
+        min-height: 390px;
+        transition: min-height, .3s ease-in-out;
+    }
+    &__slide {
+        position: absolute;
+        padding: 24px 24px 24px 124px;
+        min-height: 381px;
+        max-width: 1056px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        .reviewSlider__quote {
+            position: absolute;
+            top: 24px;
+            left: 24px;
+
+        }
+        .reviewSlider__blurFilter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(4px);
+            z-index: 9;
+            opacity: 1;
+            transition: opacity .3s ease-in-out;
+        }
+        .reviewSlider__rating {
+            margin-bottom: 16px;
+        }
+        .reviewSlider__reviewText {
+            color: var(--lfat-defaults-black, #333);
+            font-family: 'Avenir LT Std';
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 160%; /* 38.4px */
+            letter-spacing: 0.96px;
+            margin-bottom: 16px;
+        }
+        .reviewSlider__userDetails {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: auto;
+            img {
+                margin-right: 24px;
+            }
+            span {
+                color: #333;
+                font-family: 'Playfair Display SC';
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 33.6px */
+            }
+        }
+        &.active {
+            z-index: 10;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            border: 1px solid rgba(179, 179, 179, 0.24);
+            background: #FFF;
+            box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+            .reviewSlider__blurFilter {
+                opacity: 0;
+            }
+        }
+        &.blurRight {
+            z-index: 8;
+            left: unset;
+            right: 0;
+            transform: scale(0.79);
+        }
+        &.blurLeft {
+            transform: scale(0.79);
+            z-index: 8;
+            left: 0%;
+        }
+        &.invisible {
+            opacity: 0;
+        }
+    }
+    &__dots--wrapper {
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        span + span {
+            margin-left: 24px;
+        }
+    }
+    &__dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #DAB56B;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: opacity .3s ease-in-out;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .reviewSlider__slide.active {
+        max-width: 70%;
+    }
+    .reviewSlider__h2 {
+        font-size: 50px;
+    }
+    .reviewSlider__prevBtn, .reviewSlider__nextBtn {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            width: 32px !important;
+            height: 32px !important;
+        }
+    }
+    .reviewSlider__slide .reviewSlider__reviewText {
+        font-size: 18px;
+    }
+    .reviewSlider__slide {
+        min-height: 340px;
+    }
+    .reviewSlider__slide .reviewSlider__quote {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+
+@media (max-width: 855px) {
+    .reviewSlider__inner {
+        min-height: 440px;
+    }
+    .reviewSlider__slide .reviewSlider__reviewText {
+        font-size: 16px;
+    }
+    .reviewSlider__slide .reviewSlider__userDetails span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviewSlider__h2 {
+        font-size: 28px;
+    }
+    .reviewSlider__prevBtn, .reviewSlider__nextBtn {
+        left: 15px;
+        width: 32px;
+        height: 32px;
+        padding: 2px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+            width: 16px !important;
+            height: 16px !important;
+        }
+    }
+    .reviewSlider__nextBtn {
+        left: unset;
+        right: 15px;
+    }
+    .reviewSlider__slide {
+        padding: 12px;
+        padding-top: 55px;
+        min-height: 315px;
+    }
+    .reviewSlider__slide.active {
+        max-width: 95%;
+    }
+    .reviewSlider__slide .reviewSlider__quote {
+        width: 32px !important;
+        height: 32px !important;
+        top: 12px;
+        left: 12px;
+    }
+    .reviewSlider__slide .reviewSlider__rating {
+        padding-top: 12px;
+        border-top: 1px solid #DAB56B;
+        svg {
+            width: 24px !important;
+            height: 24px !important;
+        }
+    }
+    .reviewSlider__slide .reviewSlider__reviewText {
+        font-size: 14px;
+    }
+    .reviewSlider__slide .reviewSlider__userDetails span {
+        font-size: 14px;
+    }
+    .reviewSlider__slide .reviewSlider__userDetails img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
+@media (max-width: 540px) {
+    .reviewSlider__inner {
+        min-height: 410px;
+    }
+    .reviewSlider__slide.active {
+        max-width: 80%;
+    }
+}
+@media (max-width: 340px) {
+    .reviewSlider__inner {
+        min-height: 451px;
+    }
+}

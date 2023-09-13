@@ -1,0 +1,17 @@
+.img_thumb {
+    max-width: 340px !important;
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover;
+}
+.fixed-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+}
+.text-danger {
+    color: rgb(202, 89, 89);
+}
+.custom-form button {
+    margin-top: -1px !important;
+}

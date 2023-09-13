@@ -1,0 +1,152 @@
+.whereToInvest {
+    &__items--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        flex-grow: 1;
+        width: 22%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 20px 80px;
+    }
+    &__item--top {
+        width: 100%;
+        aspect-ratio: 1 / 1.5135;
+        position: relative;
+        margin-bottom: 16px;
+        .whereToInvest__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            aspect-ratio: 1 / 1.5135;
+            height: unset !important;
+            object-fit: cover;
+        }
+        .whereToInvest__h3 {
+            font-family: 'Playfair Display SC';
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            color: #FFF;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 33.6px */
+        }
+    }
+    &__item--bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 114px;
+        .whereToInvest__item--p {
+            font-family: 'Avenir LT Std';
+            color: #0B0E3D;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%; /* 38.4px */
+            letter-spacing: 0.96px;
+        }
+        .whereToInvest__item--a {
+            border-radius: 4px;
+            background-color: #DAB56B;
+            padding: 12px 24px;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color .3s ease-in-out;
+            margin-left: 30px;
+            svg path {
+                fill: #fff !important;
+                transition: fill .3s ease-in-out;
+                color: #DAB56B;
+            }
+            &:hover {
+                background-color: #fff;
+                svg path {
+                    fill: #DAB56B !important; 
+                    color: #DAB56B;
+                }
+            }
+        }
+    }
+    &__item--bottom__align--top {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1600px) {
+    .whereToInvest {
+        padding-top: 60px !important;
+    }
+    .whereToInvest__item {
+        margin: 0px 10px 60px;
+    }
+    .whereToInvest__item--top .whereToInvest__h3 {
+        font-size: 20px;
+    }
+    .whereToInvest__item--bottom .whereToInvest__item--p {
+        font-size: 18px;
+    }
+    .whereToInvest__item--bottom .whereToInvest__item--a {
+        width: 60px;
+        height: 60px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .whereToInvest__item {
+        width: 46%;
+    }
+    .whereToInvest__item--top {
+        aspect-ratio: 1 / 1;
+    }
+    .whereToInvest__item--top .whereToInvest__img {
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (max-width: 695px) {
+    .whereToInvest__item {
+        margin-bottom: 24px;
+        width: 90%;
+    }
+    .whereToInvest__item--top {
+        width: 100%;
+        height: 280px;
+    }
+    .whereToInvest__item--bottom .whereToInvest__item--a {
+        width: 50px;
+        height: 50px;
+        svg {
+            width: 32px !important;
+            height: 32px !important;
+        }
+    }
+    .whereToInvest__item--top .whereToInvest__img {
+        width: 100% !important;
+        height: 280px !important;
+        object-fit: cover;
+    }
+    .whereToInvest__item--top .whereToInvest__h3 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+    }
+    .whereToInvest__item--bottom .whereToInvest__item--p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%; /* 28.8px */
+        letter-spacing: 0.72px;
+        padding-right: 15px;
+    }
+}
