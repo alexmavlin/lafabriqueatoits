@@ -495,33 +495,33 @@
     @include('redesign/page_parts/review-slider')
 
 
-
+    <!-- Section Overview -->
     <section class="overview">
         <div class="container">
             <div class="overview__header">
                 <div class="property__content">
-                    <h2 class="property__h2">Panorama de l’immobilier à Paris</h2>
-                    <p class="overview__header__p">Le marché parisien en clair</p>
+                    <h2 class="global__h2">{{ $data['content']['overview_h2']}}</h2>
+                    <p class="overview__header__p">{{ $data['content']['overview_description']}}</p>
                 </div>
             </div>
             <div class="chasseurAdvice__row">
                 <div class="chasseurAdvice__item">
-                    <p class="chasseurAdvice__title">Baisse des prix de l'immobilier à Paris</p>
-                    <p class="chasseurAdvice__p">Au 1er trimestre 2023, le marché immobilier parisien a connu une baisse significative. Les ventes de logements anciens en Île-de-France ont chuté de 22% par rapport à l'année précédente, après une baisse de 6% au 3e trimestre 2022 et de 11% au 4e trimestre. Une période difficile!</p>
-                    <p class="chasseurAdvice__p">Les volumes de ventes du 1er trimestre 2023 sont même inférieurs à la moyenne des dix dernières années, rendant les achats plus compliqués.</p>
+                    {!! $data['content']['overview_h3_1'] !!}
+                    {!! $data['content']['overview_p_1'] !!}
                 </div>
                 <div class="chasseurAdvice__item">
-                    <p class="chasseurAdvice__title">Vers une adaptation dynamique en 2023!</p>
-                    <p class="chasseurAdvice__p">Le marché immobilier fait preuve d'agilité face aux défis actuels: accès au crédit en évolution et taux en hausse. Malgré ces ajustements, les perspectives économiques restent optimistes, avec une inflation maîtrisée et des mesures de resserrement monétaire adaptées.</p>
-                    <p class="chasseurAdvice__p">Cela témoigne de l'adaptabilité du marché immobilier dans un environnement en constante évolution.</p>
+                    {!! $data['content']['overview_h3_2'] !!}
+                    {!! $data['content']['overview_p_2'] !!}
                 </div>
                 <div class="chasseurAdvice__item">
-                    <p class="chasseurAdvice__title">Prix de l’immobilier à Paris comparé aux grandes villes mondiales</p>
-                    <p class="chasseurAdvice__p">Investir dans un appartement à Paris offre de nombreux avantages. Malgré un prix au mètre carré élevé par rapport à la moyenne nationale, Paris reste relativement abordable en comparaison avec d'autres grandes villes internationales. Voici un aperçu des prix au mètre carré dans les quartiers les plus recherchés en 2023:</p>
+                    {!! $data['content']['overview_h3_3'] !!}
+                    {!! $data['content']['overview_p_3'] !!}
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Section Statistics -->
     <section class="statistic">
         <div class="container">
             <div class="statistic__inner">
