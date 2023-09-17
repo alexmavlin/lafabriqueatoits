@@ -525,82 +525,54 @@
     <section class="statistic">
         <div class="container">
             <div class="statistic__inner">
-                <h2 class="statistic__h2">Les données à retenir sur l'immobilier à Paris</h2>
+                <h2 class="statistic__h2">{{ $data['content']['statistics_h2_1']}}</h2>
                 <div class="statistic__content">
                     <div class="statistic__item">
-                        <p class="statistic__titel">Le prix au mètre carré à Paris par type d’appartement</p>
-                        <p class="statistic__p">Appartement T1:</p>
-                        <p class="statistic__num">10.683€/m²*</p>
-                        <p class="statistic__p">Appartement T2:</p>
-                        <p class="statistic__num">10.399€/m²*</p>
-                        <p class="statistic__p">Appartement T3:</p>
-                        <p class="statistic__num">10.467€/m²*</p>
-                        <p class="statistic__p">Appartement T4 et + :</p>
-                        <p class="statistic__num">11.178€/m²*</p>
-                        <p class="statistic__bottom">* Sources: Capital.fr «Prix de l'immobilier à Paris en mars 2022: les indices à l'achat et à la location»</p>
+                        {!! $data['content']['statistics_h3_1'] !!}
+                        {!! $data['content']['statistics_p_1'] !!}
                     </div>
                     <div class="statistic__item">
-                        <p class="statistic__titel">Évolution du prix au m2 à Paris</p>
-                        <p class="statistic__p">sur 1 mois:</p>
-                        <p class="statistic__num">-0,5%</p>
-                        <p class="statistic__p">sur 3 mois:</p>
-                        <p class="statistic__num">-1,1%</p>
-                        <p class="statistic__p">sur 1 an:</p>
-                        <p class="statistic__num">-2%</p>
-                        <p class="statistic__p">sur 2 ans:</p>
-                        <p class="statistic__num">-3.2%</p>
-                        <p class="statistic__p">sur 5 ans:</p>
-                        <p class="statistic__num">+19.9</p>
-                        <p class="statistic__p">sur 10 ans:</p>
-                        <p class="statistic__num">+21,6%</p>
-                        <p class="statistic__bottom">*Sources: Meilleursagents.com au mois de
-                            Mars 2022</p>
+                        {!! $data['content']['statistics_h3_2'] !!}
+                        {!! $data['content']['statistics_p_2'] !!}
                     </div>
                     <div class="statistic__item">
-                        <p class="statistic__titel">Typologie des logements à Paris</p>
-                        <p class="statistic__p">1 pièce:</p>
-                        <p class="statistic__num">22.9%</p>
-                        <p class="statistic__p">2 pièces:</p>
-                        <p class="statistic__num">31,8%</p>
-                        <p class="statistic__p">3 pièces:</p>
-                        <p class="statistic__num">23.5%</p>
-                        <p class="statistic__p">4 pièces:</p>
-                        <p class="statistic__num">12.8%</p>
-                        <p class="statistic__p">+5 pièces:</p>
-                        <p class="statistic__num">9.0%</p>
+                        {!! $data['content']['statistics_h3_3'] !!}
+                        {!! $data['content']['statistics_p_3'] !!}
                     </div>
                 </div>
-                <h2 class="statistic__h2">les chiffres clés de la ville de Paris</h2>
+                <h2 class="statistic__h2">{{ $data['content']['statistics_h2_2']}}</h2>
                 <div class="statistic__content">
                     <div class="statistic__item__bottom">
-                        <p class="statistic__titel">Démographie et parts des logements</p>
-                        <p class="statistic__p">Population en 2021:</p>
-                        <p class="statistic__num">2 175 601 habitants (source Iledefrance.fr)</p>
-                        <p class="statistic__p">Nombre d'habitant par km2:</p>
-                        <p class="statistic__num">20 641,4 (source Insee)</p>
-                        <p class="statistic__p">Superficie (en km2):</p>
-                        <p class="statistic__num">105,4 km2</p>
-                        <p class="statistic__p">Nombre de logements en 2016:</p>
-                        <p class="statistic__num">1 374 377</p>
-                        <p class="statistic__p">Part des résidences principales en 2016:</p>
-                        <p class="statistic__num">83,0%</p>
-                        <p class="statistic__p">Part des résidences secondaires en 2016:</p>
-                        <p class="statistic__num">8,7%</p>
-                        <p class="statistic__p">Part des logements vacants en 2016:</p>
-                        <p class="statistic__num">8,3%</p>
-                        <p class="statistic__p">Part des ménages propriétaires en 2016:</p>
-                        <p class="statistic__num">33,1%</p>
-                        <p class="statistic__p">Part des maisons:</p>
-                        <p class="statistic__num">1%</p>
-                        <p class="statistic__p">Part des appartements:</p>
-                        <p class="statistic__num">99%</p>
-                        <p class="statistic__p">Part des logements sociaux:</p>
-                        <p class="statistic__num">21%</p>
-                        
+                        {!! $data['content']['statistics_h3_4'] !!}
+                        {!! $data['content']['statistics_p_4'] !!}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Section FAQ -->
+    <section class="homePageFAQ" id="faq">
+        <div class="container">
+            <div class="homePageFAQ__inner">
+                <h2 class="homePageFAQ__h2">Foire Aux Questions</h2>
+                <?php $i = 1; ?>
+                @foreach ($data['content']['faqs'] as $faq)
+
+                    <div class="homePageFAQ__item">
+                        <div class="homePageFAQ__item--icon__btn {{$i == 1 ? 'active' : '' }}"></div>
+                        <h3 class="homePageFAQ__h3 {{$i == 1 ? 'active' : '' }}">{{ $faq['main_title'] }}</h3>
+                        {!! $faq['content'] !!}
+                    </div>
+                    <?php $i++; ?>
+
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Widget Section -->
+    @include('redesign/page_parts/blog-widget')
+    
 </main>
 @endsection
