@@ -10,12 +10,22 @@ use Illuminate\Support\Facades\Route;
 
 class ChasseurController extends Controller
 {
+    private $url_index;
+
     public function __invoke($url_index)
     {
-        $content = Chasseur::where('url_index', $url_index)->with('cards')->with('faqs')->first();
-        // dd($content);
-        /* Response data */
-        $data = [
+        $this->url_index = $url_index;
+        
+        $data = $this->builResponseData();
+        //dd($data);
+
+        return view('redesign.pages.chasseur-immobilier', compact('data'));
+    }
+    
+    private function builResponseData()
+    {
+        $content = Chasseur::where('url_index', $this->url_index)->with('cards')->with('faqs')->first();
+        return [
             "meta" => [
                 "title" => $content->meta_title,
                 "robots" => "index, follow",
@@ -24,16 +34,13 @@ class ChasseurController extends Controller
                 "canonical" => request()->url(),
                 "preloads" => [],
                 "prefetches" => [],
-                "preconnects" => [
-                    'https://fonts.googleapis.com',
-                    'https://fonts.gstatic.com',
-                ],
+                "preconnects" => [],
                 "links" => [],
                 "scripts" => [],
             ],
             'breadcrumbs' => [
                 [
-                    'url' => $url_index != 'paris-IDF' ? route('immobilierAncienParisIDF') : '',
+                    'url' => $this->url_index != 'paris-IDF' ? route('immobilierAncienParisIDF') : '',
                     'title' => 'Notre service de chasseur immobilier en Ile de France',
                     'name' => 'Chasseur Immobilier IDF',
                 ],
@@ -43,15 +50,15 @@ class ChasseurController extends Controller
                     'name' => $content->breadcrumbs_name,
                 ],
             ],
+            'main_preheading' => "",
             'main_heading' => $content->page_title,
-            'main_img' => 'chasseur-immobilier-paris-75-min.webp',
+            'main_img' => 'chasseur-immobilier-paris.png',
+            'main_reverse' => true,
             'blogs' => Blog::where('is_selected', 1)->orderBy('id', 'DESC')->limit(3)->get(),
             'content' => $content,
             'habitations' => null,
             'departments' => null,
             'categories' => null,
         ];
-
-        return view('pages.chasseur.show', compact('data'));
     }
 }

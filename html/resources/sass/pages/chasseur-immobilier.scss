@@ -1,0 +1,863 @@
+.hunter {
+    display: flex;
+}
+.property__hunter__img {
+    max-width: 545px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.798;
+    object-fit: cover;
+}
+
+.hunter__content {
+    padding: 66px 60px;
+    background-color: #DAB56B;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hunter__h1 {
+    max-width: 925px;
+    width: 100%;
+    color: #FAFAFA;
+    font-family: 'Playfair Display SC';
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 112.8px */
+    letter-spacing: 5.64px;
+    margin-bottom: 16px;
+}
+.hunter__p {
+    max-width: 925px;
+    width: 100%;
+    color: #FFF;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.hunter__p + .hunter__p {
+    margin-top: 40px;
+}
+
+@media (max-width: 1600px) {
+    .property__hunter__img {
+        max-width: 490px;
+    }
+    .hunter__h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .hunter__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1280px) {
+    .property__hunter__img {
+        max-width: 420px;
+    }
+    .hunter__h1 {
+        max-width: 600px;
+    }
+    .hunter__p {
+        max-width: 600px;
+        font-size: 17px;
+    }
+}
+@media (max-width: 1090px) {
+    .hunter {
+        flex-direction: column-reverse;
+    }
+    .hunter__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 24px 20px;
+        margin-right: auto;
+    }
+    .hunter__h1,
+    .hunter__p {
+        text-align: center;
+    }
+    .hunter__h1 {
+        font-size: 36px;
+    }
+    .hunter__p {
+        font-size: 16px;
+    }
+    .property__hunter__img {
+        max-width: 100%;
+        width: 100% !important;
+        height: 444px !important;
+        aspect-ratio: unset;
+    }
+    .hunter__p + .hunter__p {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .hunter__content {
+        padding: 24px 20px;
+    }
+    .hunter__h1 {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2.16px;
+    }
+    .hunter__p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 0.56px;
+    }
+}
+/* // Section hunter */
+
+/* chasseurCards */
+
+.chasseurCards {
+    margin: 80px 0 200px;
+}
+.chasseurCards__h2 {
+    color: #DAB56B;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 3.6px;
+    margin-bottom: 40px;
+}
+.chasseurCards__list {
+    display: flex;
+    gap: 16px 20px;
+}
+.chasseurCards__item {
+    width: 100%;
+    border: 1.335px solid #DAB56B;
+    box-shadow: 5.33846px 5.33846px 16.01538px 0px rgba(0, 0, 0, 0.04);
+    padding: 24px;
+    background: #FAFAFA;
+
+/* card shadow 1 */
+box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.chasseurCards__title {
+    color:#0F135A;
+    font-family: 'Playfair Display SC';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 2.52px;
+    margin-bottom: 16px;
+}
+.chasseurCards__p {
+    color: #595959;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+@media (max-width: 1600px) {
+    .chasseurCards__h2 {
+        font-size: 50px;
+    }
+    .chasseurCards__title {
+        font-size: 32px;
+    }
+    .chasseurCards__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1100px) {
+    .chasseurCards__list {
+        flex-direction: column;
+    }
+}
+@media (max-width: 890px) {
+    .chasseurCards__h2 {
+        font-size: 40px;
+    }
+    .chasseurCards__title {
+        font-size: 33px;
+    }
+    .chasseurCards__p {
+        font-size: 16px;
+    }
+    .chasseurCards {
+        margin: 60px 0;
+    }
+}
+@media (max-width: 450px) {
+    .chasseurCards__h2 {
+        font-size: 28px;
+        letter-spacing: 1.68px; 
+    }
+    .chasseurCards__title {
+        font-size: 24px;
+        letter-spacing: 1.44px;
+    }
+    .chasseurCards__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;    
+    }
+}
+
+/* Section property */
+
+.property__content {
+    text-align: center;
+}
+.property__h2 {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 3.6px;
+    margin-bottom: 16px;
+    padding-bottom: 17px;
+    position: relative;
+}
+.property__h2::before {
+    content: ''; 
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #DAB56B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.property__p {
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.property__p + .property__p {
+    margin-top: 40px;
+}
+
+@media (max-width: 1280px) {
+    .property__h2 {
+        font-size: 50px;
+    }
+    .property__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 890px) {
+    .property__h2 {
+        font-size: 40px;
+    }
+    .property__p {
+        font-size: 16px;
+    }
+    .property__p + .property__p {
+        margin-top: 23px;
+    }
+}
+@media (max-width: 450px) {
+    .property__h2 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1.68px; 
+    }
+    .property__p {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.56px;    
+    }
+}
+
+/* chasseurAdvice */
+.chasseurAdvice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 64px; 
+}
+.chasseurAdvice__header {
+    margin-bottom: 64px;
+}
+.chasseurAdvice__top__img {
+    margin-top: 80px;
+}
+.chasseurAdvice__row {
+    margin: 0 68px;
+}
+.chasseurAdvice__item + .chasseurAdvice__item {
+    margin-top: 64px;
+}
+.chasseurAdvice__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin-bottom: 24px;
+}
+.chasseurAdvice__p {
+    color: #0B0E3D;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-bottom: 30px;
+}
+.chasseurAdvice__ul {
+    color: #0B0E3D;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    padding-left: 20px;
+    li {
+        list-style: disc;
+        /* &::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #595959;
+        } */
+    }
+}
+.chasseurAdvice__img {
+    margin: 50px 0 55px;
+    max-width: 1600px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 0.375;
+    object-fit: cover;
+}
+@media (max-width: 1600px) {
+    .chasseurAdvice__p {
+        font-size: 20px;
+    }
+    .chasseurAdvice__ul {
+        li {
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .chasseurAdvice__row {
+        margin: 0;
+        text-align: center;
+    }
+    .chasseurAdvice__img {
+        max-width: unset;
+        height: 400px !important;
+    }
+    .chasseurAdvice__title {
+        font-size: 30px;
+    }
+    .chasseurAdvice__p {
+        font-size: 16px;
+    }
+    .chasseurAdvice__ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .chasseurAdvice__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .chasseurAdvice__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .chasseurAdvice__ul {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .chasseurAdvice__item + .chasseurAdvice__item {
+        margin-top: 30px;
+    }
+    .chasseurAdvice__img {
+        padding: 0 20px;
+        margin: 35px 0;
+    }
+    .chasseurAdvice__row {
+        margin: 0;
+    }
+    .chasseurAdvice__header {
+        margin-bottom: 34px;
+    }
+    .chasseurAdvice__top__img {
+        margin-top: 60px;
+    }
+    .chasseurAdvice {
+        padding: 60px 0; 
+    }
+}
+
+/* overview */
+.overview__header {
+    margin-bottom: 80px;
+}
+.overview__header__p {
+    color: #0B0E3D;
+    font-family: 'Playfair Display SC';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 2.52px;
+}
+
+
+/* Statistic */
+
+.statistic__inner {
+    padding: 120px 0 20px;
+}
+.statistic__h2 {
+    color: #DAB56B;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 2.52px;
+    margin-bottom: 45px;
+}
+.statistic__content {
+    display: flex;
+    justify-content: center;
+    gap: 60px 20px;
+    margin-bottom: 60px;
+}
+.statistic__item {
+    max-width: 520px;
+    width: 100%;
+    padding: 24px;
+}
+.statistic__item__bottom{
+    width: 100%;
+    padding: 24px;
+}
+.statistic__titel {
+    color: #DAB56B;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+}
+.statistic__p {
+    color: #0B0E3D;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    margin-top: 24px;
+}
+.statistic__num {
+    color: #0F135A;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+}
+.statistic__bottom {
+    color: #0B0E3D;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    margin-top: 50px;
+}
+@media (max-width: 1200px) {
+    .statistic__h2 {
+        font-size: 50px;
+    }
+    .statistic__titel {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1000px) {
+    .statistic__content {
+        flex-direction: column;
+    }
+    .statistic__item {
+        max-width: unset;
+    }
+}
+@media (max-width: 900px) {
+    .overview__header__p {
+        font-size: 36px;
+    }
+}
+@media (max-width: 500px) {
+    .statistic__inner {
+        padding: 40px 0 15px;
+    }
+    .statistic__h2 {
+        font-size: 28px;
+        letter-spacing: 1.68px;
+        margin-bottom: 40px;
+    }
+    .statistic__titel {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .statistic__p {
+        font-size: 12px;
+    }
+    .statistic__num {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .statistic__content {
+       gap: 40px; 
+    }
+    .statistic__item {
+        padding: 0;
+    }
+    .statistic__item__bottom {
+        padding: 0;
+    }
+    .statistic__bottom {
+        font-size: 12px;
+    }
+    .overview__header__p {
+        font-size: 24px;
+        letter-spacing: 1.44px;
+    }
+    .overview__header {
+        margin-bottom: 30px;
+    }
+}
+/* supply */
+.supply {
+    background: #0B0E3D;
+}
+.supply__inner {
+    position: relative;
+    padding: 120px 0 20px;
+}
+.supply__logo__container {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -160px;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.supply__logo {
+    opacity: 0.2;
+
+}
+.supply__row {
+    position: relative;
+}
+.supply__left__first {
+    position: absolute;
+    width: 49%;
+    top: -240px
+}
+.supply__left__second {
+    position: absolute;
+    width: 49%;
+    top: -275px
+}
+.supply__right {
+    margin-left: auto;
+    position: relative;
+    width: 49%;
+    margin-bottom: 84px;
+    z-index: 2;
+}
+
+.supply__left__img {
+    max-width: 750px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.093;
+    object-fit: cover;
+}
+.supply__right__img {
+    max-width: 790px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.037;
+    object-fit: cover;
+}
+.supply__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin: 24px 0 24px 16px;
+}
+.supply__p {
+    color: #E0E0E0;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-left: 16px;
+}
+.supply__p + .supply__p {
+    margin-top: 40px;
+}
+@media (max-width: 1600px) {
+    .supply__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .supply__inner {
+        overflow: hidden;
+    }
+    .supply__left__first,
+    .supply__left__second {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .supply__right {
+        margin-bottom: 40px;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .supply__logo__container {
+        display: none;
+    }
+    .supply__left__img,
+    .supply__right__img {
+        max-width: unset;
+        height: 440px !important;
+    }
+}
+@media (max-width: 890px) {
+    .supply__p {
+        font-size: 16px;
+    }
+    .supply__p + .property__p {
+        margin-top: 23px;
+    }
+    .supply__logo {
+        width: 528px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 1;
+    }
+    .supply__inner {
+        padding: 40px 0 40px;
+    }
+}
+@media (max-width: 450px) {
+    .supply__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .supply__p + .supply__p {
+        margin-top: 23px;
+    }
+    .supply__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;    
+    }
+    .supply__inner {
+        padding: 24px 0 30px;
+    }
+}
+/* TABLE */
+.supply__table {
+    display: flex;
+    gap: 4px 9px;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: center;
+}
+.supply__column__aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 9px;
+    max-width: 163px;
+    width: 100%;
+}
+.supply__column__center {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 9px;
+    max-width: 220px;
+    width: 100%;
+}
+.supply__header__item {
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #DAB56B;
+}
+.supply__header__item__p {
+    color: #0B0E3D;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    letter-spacing: 0.96px;
+}
+.supply__table__title {
+    color: #FFF;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 1.92px;
+    text-transform: uppercase;
+    margin: 48px 0px 24px;
+}
+.supply__table__discr {
+    color: #FFF;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-top: 24px;
+}
+.supply__grey__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background: rgba(241, 241, 241, 0.60);
+}
+.supply__white__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background: rgba(251, 251, 251, 0.80);
+}
+.supply__table__p {
+    color: #0B0E3D;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 132%; /* 21.12px */
+}
+
+
+@media (max-width: 890px) {
+    .supply__column__aside {
+        max-width: unset;
+        width: 22%;
+    }
+    .supply__column__center {
+        max-width: unset;
+        width: 28%;
+    }
+    .supply__table__title {
+        font-size: 20px;
+    }
+    .supply__table__discr {
+        font-size: 20px;
+    }
+    .supply__header__item__p {
+        font-size: 18px;
+    }
+    .supply__header__item {
+        height: 60px;
+    }
+    .supply__grey__item {
+        height: 40px;
+    }
+    .supply__white__item {
+        height: 40px;
+    }
+}
+@media (max-width: 450px) {
+    .supply__table__title {
+        font-size: 12px;
+        letter-spacing: 0.96px;
+        margin: 12px 0;
+    }
+    .supply__table__discr {
+        margin-top: 12px;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .supply__header__item__p {
+        font-size: 12px;
+        letter-spacing: 0.48px;
+    }
+    .supply__header__item {
+        height: 40px;
+    }
+    .supply__grey__item {
+        height: 25px;
+    }
+    .supply__white__item {
+        height: 25px;
+    }
+    .supply__table__p {
+        font-size: 8px;
+    }
+}
