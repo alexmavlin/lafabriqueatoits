@@ -1,0 +1,245 @@
+.immoNeufSupply {
+    background: #0B0E3D;
+}
+.immoNeufSupply__inner {
+    position: relative;
+    padding: 120px 0 170px;
+}
+.immoNeufSupply__logo__container {
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.immoNeufSupply__logo {
+    opacity: 0.2;
+}
+.immoNeufSupply__row {
+    position: relative;
+}
+.immoNeufSupply__left__first {
+    position: absolute;
+    width: 49%;
+    top: -240px
+}
+.immoNeufSupply__left__second {
+    position: absolute;
+    width: 49%;
+    top: -275px
+}
+.immoNeufSupply__right {
+    margin-left: auto;
+    position: relative;
+    width: 49%;
+    margin-bottom: 84px;
+}
+.immoNeufSupply__img__1,
+.immoNeufSupply__img__2,
+.immoNeufSupply__img__3,
+.immoNeufSupply__img__4,
+.immoNeufSupply__img__5,
+.immoNeufSupply__img__6 {
+    width: 100% !important;
+    height: unset !important;
+    object-fit: cover;
+}
+
+.immoNeufSupply__img__1 {
+    max-width: 750px;
+    aspect-ratio: 1 / 1.093;
+}
+.immoNeufSupply__img__2 {
+    max-width: 790px;
+    aspect-ratio: 1 / 1.037;
+}
+.immoNeufSupply__img__3 {
+    max-width: 750px;
+    aspect-ratio: 1 / 0.72;
+}
+.immoNeufSupply__img__4 {
+    max-width: 790px;
+    aspect-ratio: 1 / 0.774;
+}
+.immoNeufSupply__img__5 {
+    max-width: 750px;
+    aspect-ratio: 1 / 0.88;
+}
+.immoNeufSupply__img__6 {
+    max-width: 790px;
+    aspect-ratio: 1 / 0.774;
+}
+.immoNeufSupply__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin: 24px 0 24px 16px;
+}
+.immoNeufSupply__p {
+    color: #E0E0E0;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-left: 16px;
+}
+.immoNeufSupply__p + .immoNeufSupply__p {
+    margin-top: 40px;
+}
+@media (max-width: 1200px) {
+    .immoNeufSupply__inner {
+        overflow: hidden;
+    }
+    .immoNeufSupply__left__first,
+    .immoNeufSupply__left__second {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .immoNeufSupply__right {
+        margin-bottom: 40px;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .immoNeufSupply__logo__container {
+        width: 100%;
+        bottom: -202px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .immoNeufSupply__inner {
+        padding-bottom: 120px;
+    }
+    .immoNeufSupply__img__1,
+    .immoNeufSupply__img__2,
+    .immoNeufSupply__img__3,
+    .immoNeufSupply__img__4,
+    .immoNeufSupply__img__5,
+    .immoNeufSupply__img__6 {
+        max-width: unset;
+        height: 440px !important;
+    }
+}
+@media (max-width: 890px) {
+    .immoNeufSupply__p {
+        font-size: 16px;
+    }
+    .immoNeufSupply__p + .property__p {
+        margin-top: 23px;
+    }
+    .immoNeufSupply__logo {
+        width: 528px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 1;
+    }
+    .immoNeufSupply__inner {
+        padding: 40px 0 40px;
+    }
+}
+@media (max-width: 450px) {
+    .immoNeufSupply__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .immoNeufSupply__p + .immoNeufSupply__p {
+        margin-top: 23px;
+    }
+    .immoNeufSupply__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;    
+    }
+    .immoNeufSupply__inner {
+        padding: 24px 0 30px;
+    }
+}
+
+/* bank */
+.bank {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.bank__inner {
+    margin-bottom: 80px;
+}
+.bank__header {
+    margin: 80px 0;
+}
+.bank__row {
+    margin: 0 68px;
+}
+.bank__item + .bank__item {
+    margin-top: 64px;
+}
+.bank__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin-bottom: 24px;
+}
+.bank__p {
+    color: #0B0E3D;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+@media(max-width: 1600px) {
+    .bank__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .bank__row {
+        margin: 0;
+    }
+    .bank__title {
+        font-size: 30px;
+    }
+    .bank__p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 450px) {
+    .bank__header {
+        margin: 40px 0;
+    }
+    .bank__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        margin-bottom: 12px;
+    }
+    .bank__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .bank__item + .bank__item {
+        margin-top: 30px;
+    }
+    .bank__row {
+        margin: 0;
+    }
+    .bank__inner {
+        margin-bottom: 60px;
+    }
+}
