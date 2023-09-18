@@ -98,6 +98,49 @@
     @endif
     <!-- // Section Offer -->
 
+    @if($data['content']['page_type'] == 2)
+        <!-- Section chasseurAdvice -->
+        <section class="chasseurAdvice">
+            <div class="container">
+                <div class="chasseurAdvice__header">
+                    <div class="property__content">
+                        <h2 class="global__h2">{{ $data['content']['advice_h2_1']}}</h2>
+                        {!! $data['content']['advice_description_1'] !!}
+                    </div>
+                </div>
+                <div class="chasseurAdvice__row">
+                    <div class="chasseurAdvice__item">
+                        {!! $data['content']['advice_h3_1'] !!}
+                        {!! $data['content']['advice_p_1'] !!}
+                    </div>
+                    <div class="chasseurAdvice__item">
+                        {!! $data['content']['advice_h3_2'] !!}
+                        {!! $data['content']['advice_p_2'] !!}
+                    </div>
+                </div>
+                <img    srcset="{{ asset('images/content/' . $data['content']['advice_img'] )}} 1920w,
+                                {{ asset('images/content/' . $data['content']['advice_img_600'] )}} 700w,
+                                {{ asset('images/content/' . $data['content']['advice_img_400'] )}} 500w"
+                    src="{{ asset('images/content/' . $data['content']['advice_img'] )}}" 
+                    width="1600"
+                    height="600"
+                    alt="{{ $data['content']['advice_img_alt'] }}"
+                    title="{{ $data['content']['advice_img_alt'] }}" 
+                    class="chasseurAdvice__img">
+                <div class="chasseurAdvice__row">
+                    <div class="chasseurAdvice__item">
+                        {!! $data['content']['advice_h3_3'] !!}
+                        {!! $data['content']['advice_p_3'] !!}
+                    </div>
+                    <div class="chasseurAdvice__item">
+                        {!! $data['content']['advice_h3_4'] !!}
+                        {!! $data['content']['advice_p_4'] !!}
+                    </div>
+                </div> 
+            </div>
+        </section>
+    @endif
+
     <!-- Section Statistics -->
     <section class="statistic">
         <div class="container">
