@@ -1,0 +1,401 @@
+/* Section property */
+.chasseurItemProperty {
+    padding: 120px 0px 200px;
+}
+.chasseurItemProperty__content {
+    text-align: center;
+}
+.chasseurItemProperty__content + .chasseurItemProperty__content {
+    margin-top: 80px;
+}
+
+.chasseurItemProperty__h2 {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 3.6px;
+    margin-bottom: 16px;
+    padding-bottom: 17px;
+    position: relative;
+}
+
+.chasseurItemProperty__h2::before {
+    content: ''; 
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #DAB56B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.chasseurItemProperty__p {
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.chasseurItemProperty__p + .chasseurItemProperty__p {
+    margin-top: 40px;
+}
+
+@media (max-width: 1600px) {
+    .chasseurItemProperty__p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .chasseurItemProperty__h2 {
+        font-size: 50px;
+    }
+    .chasseurItemProperty__p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .chasseurItemProperty__h2 {
+        font-size: 40px;
+    }
+    .chasseurItemProperty__p {
+        font-size: 16px;
+    }
+    .chasseurItemProperty__p + .chasseurItemProperty__p {
+        margin-top: 23px;
+    }
+}
+@media (max-width: 600px) {
+    .chasseurItemProperty {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 450px) {
+    .chasseurItemProperty__h2 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1.68px; 
+    }
+    .chasseurItemProperty__p {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.56px;    
+    }
+    .chasseurItemProperty__content {
+        margin: unset;
+    }
+    .chasseurItemProperty__content + .chasseurItemProperty__content {
+        margin-top: 16px;
+    }
+}
+
+/* OFFER */
+.offer {
+    background: #0B0E3D;
+}
+.offer__inner {
+    position: relative;
+    padding: 120px 0 1020px;
+}
+.offer__logo__container {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.offer__logo {
+    opacity: 0.2;
+}
+.offer__row {
+    position: relative;
+}
+.offer__left__first {
+    position: absolute;
+    width: 49%;
+    top: -240px
+}
+.offer__left__second {
+    position: absolute;
+    width: 49%;
+    top: -350px
+}
+.offer__left__third {
+    position: absolute;
+    width: 49%;
+    top: -350px
+}
+.offer__right {
+    margin-left: auto;
+    position: relative;
+    width: 49%;
+    margin-bottom: 84px;
+
+
+}
+
+.offer__left__img {
+    max-width: 750px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.093;
+    object-fit: cover;
+}
+.offer__right__img {
+    max-width: 790px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.037;
+    object-fit: cover;
+}
+.offer__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin: 24px 0 24px 16px;
+}
+.offer__p {
+    color: #E0E0E0;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-left: 16px;
+}
+.offer__p + .offer__p {
+    margin-top: 40px;
+}
+@media (max-width: 1600px) {
+    .offer__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .offer__inner {
+        overflow: hidden;
+    }
+    .offer__left__first,
+    .offer__left__second,
+    .offer__left__third {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__right {
+        margin-bottom: 40px;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .offer__logo__container {
+        width: 100%;
+        bottom: -202px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .offer__inner {
+        padding-bottom: 120px;
+    }
+    .offer__left__img,
+    .offer__right__img {
+        max-width: unset;
+        height: 440px !important;
+    }
+}
+@media (max-width: 890px) {
+    .offer__p {
+        font-size: 16px;
+    }
+    .offer__p + .chasseurItemProperty__p {
+        margin-top: 23px;
+    }
+    .offer__logo {
+        width: 528px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 1;
+    }
+    .offer__inner {
+        padding: 40px 0 40px;
+    }
+}
+@media (max-width: 450px) {
+    .offer__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .offer__p + .offer__p {
+        margin-top: 23px;
+    }
+    .offer__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;    
+    }
+    .offer__inner {
+        padding: 24px 0 30px;
+    }
+}
+
+/* supply */
+.offer2 {
+    background: #0B0E3D;
+}
+.offer2__inner {
+    position: relative;
+    padding: 120px 0 170px;
+}
+.offer2__logo__container {
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+.offer2__logo {
+    opacity: 0.2;
+}
+.offer2__row {
+    position: relative;
+}
+.offer2__left__first {
+    position: absolute;
+    width: 49%;
+    top: -240px
+}
+.offer2__left__second {
+    position: absolute;
+    width: 49%;
+    top: -275px
+}
+.offer2__right {
+    margin-left: auto;
+    position: relative;
+    width: 49%;
+    margin-bottom: 84px;
+}
+
+.offer2__left__img {
+    max-width: 750px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.093;
+    object-fit: cover;
+}
+.offer2__right__img {
+    max-width: 790px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 1.037;
+    object-fit: cover;
+}
+.offer2__title {
+    color: #DAB56B;
+    font-family: 'Playfair Display SC';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+    letter-spacing: 2.16px;
+    margin: 24px 0 24px 16px;
+}
+.offer2__p {
+    color: #E0E0E0;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    margin-left: 16px;
+}
+.offer2__p + .offer2__p {
+    margin-top: 40px;
+}
+@media (max-width: 1200px) {
+    .offer2__inner {
+        overflow: hidden;
+    }
+    .offer2__left__first,
+    .offer2__left__second {
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .offer2__right {
+        margin-bottom: 40px;
+        margin: 0 auto 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .offer2__logo__container {
+        width: 100%;
+        bottom: -202px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .offer2__inner {
+        padding-bottom: 120px;
+    }
+    .offer2__left__img,
+    .offer2__right__img {
+        max-width: unset;
+        height: 440px !important;
+    }
+}
+@media (max-width: 890px) {
+    .offer2__p {
+        font-size: 16px;
+    }
+    .offer2__p + .property__p {
+        margin-top: 23px;
+    }
+    .offer2__logo {
+        width: 528px !important;
+        height: unset !important;
+        aspect-ratio: 1 / 1;
+    }
+    .offer2__inner {
+        padding: 40px 0 40px;
+    }
+}
+@media (max-width: 450px) {
+    .offer2__title {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+    }
+    .offer2__p + .offer2__p {
+        margin-top: 23px;
+    }
+    .offer2__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;    
+    }
+    .offer2__inner {
+        padding: 24px 0 30px;
+    }
+}
