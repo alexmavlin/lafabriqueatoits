@@ -5,14 +5,14 @@
             <p class="global__description">Découvrez les pépites immobilières que La Fabrique à Toits vous dévoile dans la région magique d'Île-de-France! Nous visons des emplacements stratégiques tels que Paris (75), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val de Marne (94), Seine et Marne (77), Les Yvelines (78), Essonne (91) et Val-d'Oise (95). Ces coins fantastiques vous promettent des investissements fructueux et pleins de surprises!</p>
             <div class="whereToInvest__items--wrapper">
                 <div class="whereToInvest__item">
-                    <div class="whereToInvest__item--top">
+                    <a class="whereToInvest__item--top">
                         <img    src="{{ asset('images/content/where_to_invest_1.webp') }}" 
                                 alt="" 
                                 width="370"
                                 height="560"
                                 class="whereToInvest__img">
                         <h3 class="whereToInvest__h3">Paris 75</h3>
-                    </div>
+                    </a>
                     <div class="whereToInvest__item--bottom">
                         <p class="whereToInvest__item--p">Explorez la magie de Paris!</p>
                         <a  href="{{ route('chasseur.show', 'paris')}}" 

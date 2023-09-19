@@ -32,13 +32,15 @@ class IndexController extends Controller
             'main_reverse' => false,
             'main_arrow' => true,
             'blogs' => Blog::where('is_selected', 1)->orderBy('id', 'DESC')->limit(3)->get(),
-            'habitations' => Habitation::orderBy('id', 'DESC')->limit(3)->get(),
+            'habitations' => Habitation::   orderBy('id', 'DESC')->
+                                            limit(3)->
+                                            get(),
             'departments' => null,
             'categories' => null,
         ];
 
-        // dd($data);
-
+         //dd($data['habitations'][0]->images[0]->src);
+        //dd($data);
         return view('index', compact('data'));
     }
 }

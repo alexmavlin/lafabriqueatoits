@@ -223,6 +223,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
     }
     &__slider--wrapper__img--filter__num {
         color: #FFF;
@@ -283,6 +284,9 @@
     top: 50%;
     left: -140px;
     transform: translateY(-50%);
+}
+.slick-slide {
+    height: 650px;
 }
 .slick-prev.slick-arrow {
     background: transparent;

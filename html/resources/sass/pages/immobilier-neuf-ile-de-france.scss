@@ -411,7 +411,6 @@
     background: #C79F4F;
 }
 .searchForm__item--p {
-    height: 56px;
     margin: 0px 8px 12px;
     padding-left: 36px;
     overflow: hidden;
@@ -488,14 +487,14 @@
     .searchForm__submit--btn {
         font-size: 20px;
     }
+    .searchForm__sidebar {
+        max-width: 340px;
+    }
 }
 
 @media (max-width: 1400px) {
     .searchForm__h2 {
         font-size: 36px;
-    }
-    .searchForm__sidebar {
-        max-width: 400px;
     }
     .searchForm__item--tags {
         flex-direction: column;
