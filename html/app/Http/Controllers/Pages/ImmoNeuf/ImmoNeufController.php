@@ -13,7 +13,8 @@ class ImmoNeufController extends Controller
 {
     public function __invoke($url_index)
     {
-        $content = ImmoNeuf::where('url_index', $url_index)->first();
+        $content = ImmoNeuf::where('url_index', $url_index)->with('faqs')->first();
+
         // dd($content);
         /* Response data */
         $data = [

@@ -29,7 +29,8 @@
     letter-spacing: 5.64px;
     margin-bottom: 16px;
 }
-.hunter__p {
+.hunter__p,
+.hunter__ul li {
     max-width: 925px;
     width: 100%;
     color: #FFF;
@@ -40,7 +41,13 @@
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
 }
-.hunter__p + .hunter__p {
+.hunter__ul li {
+    list-style: disc;
+    margin-left: 24px;
+}
+.hunter__p + .hunter__p,
+.hunter__p:last-child,
+.hunter__ul {
     margin-top: 40px;
 }
 
@@ -145,6 +152,8 @@
     box-shadow: 5.33846px 5.33846px 16.01538px 0px rgba(0, 0, 0, 0.04);
     padding: 24px;
     background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
 
 /* card shadow 1 */
 box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
@@ -167,6 +176,7 @@ box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
     font-weight: 300;
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
+    margin-top: auto;
 }
 @media (max-width: 1600px) {
     .chasseurCards__h2 {
@@ -332,6 +342,7 @@ box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
     padding-left: 20px;
+    margin-bottom: 30px;
     li {
         list-style: disc;
         /* &::before {
@@ -612,20 +623,21 @@ box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
 
 }
 .supply__row {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 .supply__left__first {
-    position: absolute;
-    width: 49%;
-    top: -240px
+    flex-grow: 1;
+    width: 47%;
+    margin-top: -240px;
 }
 .supply__left__second {
-    position: absolute;
-    width: 49%;
-    top: -275px
+    flex-grow: 1;
+    width: 47%;
+    margin-top: -125px;
 }
 .supply__right {
-    margin-left: auto;
+    margin-left: 40px;
     position: relative;
     width: 49%;
     margin-bottom: 84px;

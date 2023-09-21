@@ -455,12 +455,14 @@
                     {!! $data['content']['advice_p_2'] !!}
                 </div>
             </div>
-            <div class="chasseurAdvice__top__img">
-                <div class="property__content">
-                    <h2 class="global__h2">{{ $data['content']['advice_h2_2']}}</h2>
-                    <p class="global__description">{{ $data['content']['advice_description_2']}}</p>
+            @if ($data['content']['advice_h2_2'])
+                <div class="chasseurAdvice__top__img">
+                    <div class="property__content">
+                        <h2 class="global__h2">{{ $data['content']['advice_h2_2']}}</h2>
+                        <p class="global__description">{{ $data['content']['advice_description_2']}}</p>
+                    </div>
                 </div>
-            </div>
+            @endif
             <img    srcset="{{ asset('images/content/' . $data['content']['advice_img'] )}} 1920w,
                             {{ asset('images/content/' . $data['content']['advice_img_600'] )}} 700w,
                             {{ asset('images/content/' . $data['content']['advice_img_400'] )}} 500w"
@@ -505,24 +507,20 @@
                 </div>
             </div>
             <div class="chasseurAdvice__row">
-                <div class="chasseurAdvice__item">
-                    {!! $data['content']['overview_h3_1'] !!}
-                    {!! $data['content']['overview_p_1'] !!}
-                </div>
-                <div class="chasseurAdvice__item">
-                    {!! $data['content']['overview_h3_2'] !!}
-                    {!! $data['content']['overview_p_2'] !!}
-                </div>
-                <div class="chasseurAdvice__item">
-                    {!! $data['content']['overview_h3_3'] !!}
-                    {!! $data['content']['overview_p_3'] !!}
-                </div>
+                @for ($i = 1; $i <=14 ; $i++)
+                    @if($data['content']['overview_h3_' . $i])
+                        <div class="chasseurAdvice__item">
+                            {!! $data['content']['overview_h3_' . $i] !!}
+                            {!! $data['content']['overview_p_' . $i] !!}
+                        </div>
+                    @endif
+                @endfor
             </div>
         </div>
     </section>
 
     <!-- Section Statistics -->
-    <section class="statistic">
+    {{-- <section class="statistic">
         <div class="container">
             <div class="statistic__inner">
                 <h2 class="statistic__h2">{{ $data['content']['statistics_h2_1']}}</h2>
@@ -549,7 +547,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Section FAQ -->
     <section class="homePageFAQ" id="faq">

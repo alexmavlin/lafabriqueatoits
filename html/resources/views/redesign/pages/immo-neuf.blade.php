@@ -226,7 +226,7 @@
             </div>
             <div class="bank__inner">
                 <div class="bank__row">
-                    @for ($i = 1; $i <= 3; $i++)
+                    @for ($i = 1; $i <= 14; $i++)
                         <div class="bank__item">
                             {!! $data['content']['bank_h3_' . $i] !!}
                             {!! $data['content']['bank_p_' . $i] !!}
@@ -243,26 +243,17 @@
         <div class="container">
             <div class="homePageFAQ__inner">
                 <h2 class="homePageFAQ__h2">Foire Aux Questions</h2>
-                <div class="homePageFAQ__item">
-                    <div class="homePageFAQ__item--icon__btn active"></div>
-                    <h3 class="homePageFAQ__h3 active">Pourquoi investir dans l'immobilier à Paris?</h3>
-                    <p class="homePageFAQ__p active">Paris, une destination d'investissement immobilier à ne pas manquer! En effet, investir dans l'immobilier à Paris présente une myriade d'avantages. Tout d'abord, le marché immobilier parisien est en constante croissance, offrant ainsi d'innombrables opportunités d'investissement prometteuses. De plus, en tant que métropole dynamique et internationale, Paris garantit la stabilité et la rentabilité de votre placement. Enfin, l'immobilier neuf à Paris a toujours été synonyme d'une appréciation continue de la valeur, ce qui en fait un investissement sûr et lucratif sur le long terme.</p>
-                </div>
-                <div class="homePageFAQ__item">
-                    <div class="homePageFAQ__item--icon__btn"></div>
-                    <h3 class="homePageFAQ__h3">Quels avantages d'acheter dans le neuf à Paris?</h3>
-                    <p class="homePageFAQ__p">Paris, une destination d'investissement immobilier à ne pas manquer! En effet, investir dans l'immobilier à Paris présente une myriade d'avantages. Tout d'abord, le marché immobilier parisien est en constante croissance, offrant ainsi d'innombrables opportunités d'investissement prometteuses. De plus, en tant que métropole dynamique et internationale, Paris garantit la stabilité et la rentabilité de votre placement. Enfin, l'immobilier neuf à Paris a toujours été synonyme d'une appréciation continue de la valeur, ce qui en fait un investissement sûr et lucratif sur le long terme.</p>
-                </div>
-                <div class="homePageFAQ__item">
-                    <div class="homePageFAQ__item--icon__btn"></div>
-                    <h3 class="homePageFAQ__h3">Pourquoi acheter dans un écoquartier?</h3>
-                    <p class="homePageFAQ__p">Paris, une destination d'investissement immobilier à ne pas manquer! En effet, investir dans l'immobilier à Paris présente une myriade d'avantages. Tout d'abord, le marché immobilier parisien est en constante croissance, offrant ainsi d'innombrables opportunités d'investissement prometteuses. De plus, en tant que métropole dynamique et internationale, Paris garantit la stabilité et la rentabilité de votre placement. Enfin, l'immobilier neuf à Paris a toujours été synonyme d'une appréciation continue de la valeur, ce qui en fait un investissement sûr et lucratif sur le long terme.</p>
-                </div>
-                <div class="homePageFAQ__item">
-                    <div class="homePageFAQ__item--icon__btn"></div>
-                    <h3 class="homePageFAQ__h3">De quel type de logement sont composés les écoquartiers?</h3>
-                    <p class="homePageFAQ__p">Paris, une destination d'investissement immobilier à ne pas manquer! En effet, investir dans l'immobilier à Paris présente une myriade d'avantages. Tout d'abord, le marché immobilier parisien est en constante croissance, offrant ainsi d'innombrables opportunités d'investissement prometteuses. De plus, en tant que métropole dynamique et internationale, Paris garantit la stabilité et la rentabilité de votre placement. Enfin, l'immobilier neuf à Paris a toujours été synonyme d'une appréciation continue de la valeur, ce qui en fait un investissement sûr et lucratif sur le long terme.</p>
-                </div>
+                <?php $i = 1; ?>
+                @foreach ($data['content']['faqs'] as $faq)
+
+                    <div class="homePageFAQ__item">
+                        <div class="homePageFAQ__item--icon__btn {{$i == 1 ? 'active' : '' }}"></div>
+                        <h3 class="homePageFAQ__h3 {{$i == 1 ? 'active' : '' }}">{{ $faq['main_title'] }}</h3>
+                        {!! $faq['content'] !!}
+                    </div>
+                    <?php $i++; ?>
+
+                @endforeach
             </div>
         </div>
     </section>

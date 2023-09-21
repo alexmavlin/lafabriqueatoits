@@ -236,7 +236,7 @@
                         @foreach ($data['habitations'] as $habitation)
                             <a  class="searchForm__item"
                                 title="{{ $habitation->h1_title }}"
-                                href="{{ url('immobilier-neuf-ile-de-france/' .  $habitation->department->dpt_slug . '/programme-immobilier-appartement-neuf?programme=' . $habitation->slug . '&ville=' . $habitation->city ) }}">
+                                href="{{ url('immobilier-neuf-ile-de-france/' .  $habitation->department->dpt_slug . '/programme-immobilier-appartement-neuf.php?programme=' . $habitation->slug . '&ville=' . $habitation->city ) }}">
                                 <div class="searchForm__item--top">
                                     <img    src="{{ asset('uploads/images/habitations') . '/' . $habitation->images[0]->src }}" 
                                             alt="{{ $habitation->images[0]->alt }}" 
