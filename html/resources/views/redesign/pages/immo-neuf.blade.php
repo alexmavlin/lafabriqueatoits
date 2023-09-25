@@ -182,34 +182,36 @@
                         {!! $data['content']['supply_p_4'] !!}
                     </div>
                 </div>
-                <div class="immoNeufSupply__row">
-                    <div class="immoNeufSupply__left__second">
-                        <img    srcset="{{ asset('images/content/' . $data['content']['supply_img_5']) }} 1920w,
-                                        {{ asset('images/content/' . $data['content']['supply_img_600_5']) }} 700w,
-                                        {{ asset('images/content/' . $data['content']['supply_img_400_5']) }} 500w"
-                                src="{{ asset('images/content/' . $data['content']['supply_img_5']) }}" 
-                                width="750"
-                                height="660"
-                                alt="{{ $data['content']['supply_img_alt_5'] }}"
-                                title="{{ $data['content']['supply_img_alt_5'] }}" 
-                                class="immoNeufSupply__img__5">
-                        {!! $data['content']['supply_h2_5'] !!}
-                        {!! $data['content']['supply_p_5'] !!}
+                @if($data['content']['supply_h2_5'])
+                    <div class="immoNeufSupply__row">
+                        <div class="immoNeufSupply__left__second">
+                            <img    srcset="{{ asset('images/content/' . $data['content']['supply_img_5']) }} 1920w,
+                                            {{ asset('images/content/' . $data['content']['supply_img_600_5']) }} 700w,
+                                            {{ asset('images/content/' . $data['content']['supply_img_400_5']) }} 500w"
+                                    src="{{ asset('images/content/' . $data['content']['supply_img_5']) }}" 
+                                    width="750"
+                                    height="660"
+                                    alt="{{ $data['content']['supply_img_alt_5'] }}"
+                                    title="{{ $data['content']['supply_img_alt_5'] }}" 
+                                    class="immoNeufSupply__img__5">
+                            {!! $data['content']['supply_h2_5'] !!}
+                            {!! $data['content']['supply_p_5'] !!}
+                        </div>
+                        <div class="immoNeufSupply__right">
+                            <img    srcset="{{ asset('images/content/' . $data['content']['supply_img_6']) }} 1920w,
+                                            {{ asset('images/content/' . $data['content']['supply_img_600_6']) }} 700w,
+                                            {{ asset('images/content/' . $data['content']['supply_img_400_6']) }} 500w"
+                                    src="{{ asset('images/content/' . $data['content']['supply_img_6']) }}" 
+                                    width="790"
+                                    height="612"
+                                    alt="{{ $data['content']['supply_img_alt_6'] }}"
+                                    title="{{ $data['content']['supply_img_alt_6'] }}" 
+                                    class="immoNeufSupply__img__6">
+                            {!! $data['content']['supply_h2_6'] !!}
+                            {!! $data['content']['supply_p_6'] !!}
+                        </div>
                     </div>
-                    <div class="immoNeufSupply__right">
-                        <img    srcset="{{ asset('images/content/' . $data['content']['supply_img_6']) }} 1920w,
-                                        {{ asset('images/content/' . $data['content']['supply_img_600_6']) }} 700w,
-                                        {{ asset('images/content/' . $data['content']['supply_img_400_6']) }} 500w"
-                                src="{{ asset('images/content/' . $data['content']['supply_img_6']) }}" 
-                                width="790"
-                                height="612"
-                                alt="{{ $data['content']['supply_img_alt_6'] }}"
-                                title="{{ $data['content']['supply_img_alt_6'] }}" 
-                                class="immoNeufSupply__img__6">
-                        {!! $data['content']['supply_h2_6'] !!}
-                        {!! $data['content']['supply_p_6'] !!}
-                    </div>
-                </div>
+                @endif
             </div>
         </div>
     </section>
@@ -221,7 +223,7 @@
             <div class="bank__header">
                 <div class="property__content">
                     <h2 class="global__h2">{{ $data['content']['bank_h2'] }}</h2>
-                    <p class="global__description">{{ $data['content']['bank_description'] }}</p>
+                    {!! $data['content']['bank_description'] !!}
                 </div>
             </div>
             <div class="bank__inner">

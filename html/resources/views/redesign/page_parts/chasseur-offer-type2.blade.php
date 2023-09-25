@@ -32,6 +32,13 @@
                             class="offer2__left__img">
                     {!! $data['content']['offer_h2_1'] !!}
                     {!! $data['content']['offer_p_1'] !!}
+                    @switch(explode('-', $data['content']->url_index)[0])
+                        @case('paris')
+                            @include('parts/prix-tables/prix-paris')
+                            @break
+                        @default
+                            @include('parts/prix-tables/92-hauts-de-seine')
+                    @endswitch
                 </div>
                 <div class="offer2__right">
                     <img    srcset="{{ asset('images/content/' . $data['content']['offer_img_2']) }} 1920w,

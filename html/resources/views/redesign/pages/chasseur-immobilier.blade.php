@@ -164,270 +164,34 @@
                                 class="supply__right__img">
                         {!! $data['content']['supply_h2_4'] !!}
                         {!! $data['content']['supply_p_4'] !!}
-                        <div class="supply__table">
-                            <div class="supply__column__aside">
-                                <div class="supply__header__item">
-                                    <p class="supply__header__item__p">Arr</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">1ER</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">2EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">3EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">4EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">5EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">6EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">7EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">8EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">9EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">10EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">11EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">12EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">13EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">14EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">15EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">16EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">17EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">18EME</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">19EME</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">20EME</p>
-                                </div>
-                            </div>
-                            <div class="supply__column__center">
-                                <div class="supply__header__item">
-                                    <p class="supply__header__item__p">Prix au m²</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">13 488 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">12 093 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">12 838 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">12 626 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">13 480 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">14 520 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">14 318 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">12 183 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">11 740 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">10 568 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">10 758 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">10 045 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">9 765 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">10 760 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">10 577 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">11 391 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">11 208 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">9 864 €</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">9 317 €</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">9 646 €</p>
-                                </div>
-                                
-                            </div>
-                            <div class="supply__column__center">
-                                <div class="supply__header__item">
-                                    <p class="supply__header__item__p">Évolution</p>
-                                        <p class="supply__header__item__p">sur 1 an</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,6 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 3,6 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 4,2 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 0,4 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 0,3 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 2,0 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,2 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,8 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 3,0 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,8 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,9 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,5 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 2,2 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,6 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,4 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,7 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,5 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 4,2 %</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">- 1,7 %</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">- 1,9 %</p>
-                                </div>
-                            </div>
-                            <div class="supply__column__aside">
-                                <div class="supply__header__item">
-                                    <p class="supply__header__item__p">Liens</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__grey__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>
-                                <div class="supply__white__item">
-                                    <p class="supply__table__p">→</p>
-                                </div>                               
-                            </div>
-                        </div>
+                        @switch($data['content']->url_index)
+                                @case('paris')
+                                    @include('parts/prix-tables/prix-paris')
+                                    @break
+                                @case('91-essonne')
+                                    @include('parts/prix-tables/prix-91-essone')
+                                    @break
+                                @case('92-hauts-de-seine')
+                                    @include('parts/prix-tables/92-hauts-de-seine')
+                                    @break
+                                @case('93-seine-saint-denis')
+                                    @include('parts/prix-tables/93-seine-saint-denis')
+                                    @break
+                                @case('94-val-de-marne')
+                                    @include('parts/prix-tables/94-val-de-marne')
+                                    @break
+                                @case('95-val-d-oise')
+                                    @include('parts/prix-tables/95-val-d-oise')
+                                    @break
+                                @case('77-seine-et-marne')
+                                    @include('parts/prix-tables/77-seine-et-marne')
+                                    @break
+                                @case('78-yvelines')
+                                    @include('parts/prix-tables/78-yvelines')
+                                    @break
+                                @default
+                                    
+                            @endswitch
                         <p class="supply__table__discr">Source : Données MeilleursAgents, Notaire de France et Insee</p>
                     </div>
                 </div>

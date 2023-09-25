@@ -1,4 +1,4 @@
-<table>
+<table class="supply__table">
     <caption style="margin-bottom:15px;">{!! $data['content']->p_items_desc !!}</caption>
 
             <thead>

@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 1600px) {
+    .chasseurItemProperty  {
+        padding-bottom: 120px;
+    }
     .chasseurItemProperty__p {
         font-size: 20px;
     }
@@ -99,10 +102,12 @@
 /* OFFER */
 .offer {
     background: #0B0E3D;
+    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .offer__inner {
     position: relative;
-    padding: 120px 0 1020px;
 }
 .offer__logo__container {
     width: 50%;
@@ -116,22 +121,29 @@
     opacity: 0.2;
 }
 .offer__row {
+    display: flex;
     position: relative;
+    z-index: 2;
+    div {
+        flex-grow: 1;
+        width: 47%;
+    }
+    div + div {
+        margin-left: 40px;
+    }
+    & + .offer__row {
+        margin-top: 180px;
+    }
 }
 .offer__left__first {
-    position: absolute;
-    width: 49%;
-    top: -240px
+    margin-top: -200px;
 }
 .offer__left__second {
-    position: absolute;
-    width: 49%;
-    top: -350px
+    margin-top: -140px;
 }
 .offer__left__third {
-    position: absolute;
-    width: 49%;
-    top: -350px
+    margin-top: -140px;
+    flex-grow: unset !important;
 }
 .offer__right {
     margin-left: auto;
@@ -166,7 +178,8 @@
     letter-spacing: 2.16px;
     margin: 24px 0 24px 16px;
 }
-.offer__p {
+.offer__p,
+.offer__ul li {
     color: #E0E0E0;
     font-family: 'Avenir LT Std';
     font-size: 24px;
@@ -176,11 +189,16 @@
     letter-spacing: 0.96px;
     margin-left: 16px;
 }
+.offer__ul li {
+    margin-left: 36px;
+    list-style: disc;
+}
 .offer__p + .offer__p {
     margin-top: 40px;
 }
 @media (max-width: 1600px) {
-    .offer__p {
+    .offer__p,
+    .offer__ul li {
         font-size: 20px;
     }
 }
@@ -188,24 +206,23 @@
     .offer__inner {
         overflow: hidden;
     }
+    .offer__row {
+        flex-direction: column;
+        div + div {
+            margin-left: 0;
+            margin-top: 40px;
+        }
+        div {
+            max-width: unset;
+            width: 100%;
+        }
+    }
     .offer__left__first,
     .offer__left__second,
     .offer__left__third {
-        position: relative;
-        left: unset;
-        top: unset;
-        margin: 0 auto 40px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        margin-top: unset;
     }
-    .offer__right {
-        margin-bottom: 40px;
-        margin: 0 auto 40px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+    
     .offer__logo__container {
         width: 100%;
         bottom: -202px;
@@ -222,7 +239,8 @@
     }
 }
 @media (max-width: 890px) {
-    .offer__p {
+    .offer__p,
+    .offer__ul li {
         font-size: 16px;
     }
     .offer__p + .chasseurItemProperty__p {
@@ -245,7 +263,8 @@
     .offer__p + .offer__p {
         margin-top: 23px;
     }
-    .offer__p {
+    .offer__p,
+    .offer__ul li {
         font-size: 14px;
         letter-spacing: 0.56px;    
     }
@@ -257,10 +276,11 @@
 /* supply */
 .offer2 {
     background: #0B0E3D;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .offer2__inner {
     position: relative;
-    padding: 120px 0 170px;
 }
 .offer2__logo__container {
     width: 50%;
@@ -270,28 +290,31 @@
     right: 0;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .offer2__logo {
     opacity: 0.2;
 }
 .offer2__row {
+    display: flex;
     position: relative;
+    z-index: 2;
+    div {
+        flex-grow: 1;
+        width: 47%;
+    }
+    div + div {
+        margin-left: 40px;
+    }
+    & + .offer2__row {
+        margin-top: 180px;
+    }
 }
 .offer2__left__first {
-    position: absolute;
-    width: 49%;
-    top: -240px
+    margin-top: -200px;
 }
 .offer2__left__second {
-    position: absolute;
-    width: 49%;
-    top: -275px
-}
-.offer2__right {
-    margin-left: auto;
-    position: relative;
-    width: 49%;
-    margin-bottom: 84px;
+    margin-top: -140px;
 }
 
 .offer2__left__img {
@@ -331,19 +354,29 @@
 .offer2__p + .offer2__p {
     margin-top: 40px;
 }
+@media(max-width: 1600px) {
+    .offer2__title {
+        font-size: 28px;
+    }
+    .offer2__p {
+        font-size: 20px;
+    }
+}
 @media (max-width: 1200px) {
     .offer2__inner {
         overflow: hidden;
     }
-    .offer2__left__first,
-    .offer2__left__second {
-        position: relative;
-        left: unset;
-        top: unset;
-        margin: 0 auto 40px;
-        width: 100%;
-        display: flex;
+    .offer2__row {
         flex-direction: column;
+        div {
+            width: 100%;
+            max-width: unset;
+            margin: 0;
+        }
+        div + div {
+            margin-left: unset;
+            margin-top: 20px;
+        }
     }
     .offer2__right {
         margin-bottom: 40px;

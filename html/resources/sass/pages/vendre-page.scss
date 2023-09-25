@@ -1,0 +1,518 @@
+/* OPTIMIZE */
+.optimize {
+    background: #DAB56B;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.optimize__h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 112.8px */
+    letter-spacing: 5.64px;
+    margin-bottom: 16px;
+    z-index: 2;
+    position: relative;
+}
+.optimize__p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    z-index: 2;
+    position: relative;
+}
+.optimize__inner {
+    position: relative;
+}
+.optimize__logo {
+    bottom: -86px;
+    position: absolute;
+    opacity: 0.12;
+    z-index: 1;
+}
+
+@media (max-width: 1600px) {
+    .optimize__h2 {
+        font-size: 50px;
+    }
+    .optimize__p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .optimize__h2 {
+        font-size: 65px;
+    }
+    .optimize__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .optimize__h2 {
+        font-size: 45px;
+    }
+    .optimize__p {
+        font-size: 18px;
+    }
+    .optimize__logo {
+        bottom: -211px;
+        width: 600px;
+        height: 600px;  
+        left: 20%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 450px) {
+    .optimize {
+        padding: 24px 0;
+    }
+    .optimize__h2 {
+        font-size: 36px;
+        letter-spacing: 2.16px;
+    }
+    .optimize__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .optimize__logo {
+        bottom: -122px;
+        width: 400px;
+        height: 400px;  
+    }
+}
+/* BUY */
+
+.buy {
+    padding: 80px 0 120px;
+}
+.buy__header {
+
+}
+.buy__h2 {
+    position: relative;
+    color: #DAB56B;
+    text-align: center;
+    font-family:'Playfair Display SC';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 3.6px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.buy__h2::before {
+    content: ''; 
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #DAB56B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.buy__header__p {
+    color: #333;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.buy__header__p + .buy__header__p{
+    margin-top: 40px;
+}
+.buy__item__first {
+    position: relative;
+    max-width: 1060px;
+    margin: 350px 60px 0 auto;
+}
+.buy__item__content {
+    position: relative;
+    z-index: 2;
+    position: relative;
+    padding: 24px;
+    border-radius: 8px;
+    background: #FAFAFA;
+    border: 1px solid rgba(224, 224, 224, 0.40);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.buy__first__img {
+    top: -270px;
+    left: -405px;
+    z-index: 1;
+    position: absolute;
+    max-width: 1060px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 0.432;
+    object-fit: cover;
+}
+
+.buy__item__second {
+    position: relative;
+    max-width: 1060px;
+    margin: 406px auto 0 135px;
+}
+.buy__second__img {
+    top: -326px;
+    right: -270px;
+    z-index: 1;
+    position: absolute;
+    max-width: 1060px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 0.432;
+    object-fit: cover;
+}
+
+.buy__item__third {
+    position: relative;
+    max-width: 1060px;
+    margin: 350px 60px 0 auto;
+}
+.buy__third__img {
+    top: -270px;
+    left: -405px;
+    z-index: 1;
+    position: absolute;
+    max-width: 1060px;
+    width: 100% !important;
+    height: unset !important;
+    aspect-ratio: 1 / 0.432;
+    object-fit: cover;
+}
+
+
+
+.buy__item__title {
+    color: #0F135A;
+    font-family: 'Playfair Display SC';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 2.52px;
+    margin-bottom: 16px;
+}
+.buy__p {
+    color: #595959;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.buy__p + .buy__p {
+    margin-top: 40px;
+}
+.buy__ul {
+    color: #595959;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+    padding-left: 20px;
+    margin: 40px 0;
+    li {
+        list-style-type: disc;
+    }
+}
+.buy__ul li::before {
+    content: "";
+    margin-right: 5px;
+} 
+
+@media (max-width: 1510px) {
+    .buy__first__img {
+        left: 35%;
+        transform: translateX(-50%);
+    }
+    .buy__second__img {
+        right: 35%;
+        transform: translateX(50%);
+    }
+    .buy__third__img {
+        left: 35%;
+        transform: translateX(-50%);
+    }
+    .buy__item__title {
+        font-size: 35px;
+    }
+    .buy__p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1410px) {
+    .buy__first__img {
+        max-width: 950px;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+    .buy__second__img {
+        max-width: 950px;
+        right: 40%;
+        transform: translateX(50%);
+    }
+    .buy__third__img {
+        max-width: 950px;
+        left: 40%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 1300px) {
+    .buy__item__third,
+    .buy__item__second,
+    .buy__item__first {
+        margin: 0 auto;
+    } 
+    .buy__item__content {
+        margin: 370px 16px 0 16px;
+    }
+    .buy__first__img {
+        max-width: unset;
+        left: 50%;
+        width: 100% !important;
+        height: 300px !important;
+        transform: translateX(-50%);
+    }
+    .buy__second__img {
+        max-width: unset;
+        right: 50%;
+        width: 100% !important;
+        height: 300px !important;
+        transform: translateX(50%);
+    }
+    .buy__third__img {
+        max-width: unset;
+        left: 50%;
+        width: 100% !important;
+        height: 300px !important;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 700px) {
+    .buy__h2 {
+        font-size: 45px;
+    }
+    .buy__header__p {
+        font-size: 18px;
+    }
+    .buy__item__content {
+        margin-top: 325px;
+    }
+    .buy__second__img {
+        top: -270px
+    }
+    .buy__item__title {
+        font-size: 35px;
+    }
+    .buy__p {
+        font-size: 18px;
+    }
+    .buy__ul {
+        font-size: 18px;  
+        margin: 23px 0; 
+    }
+    .buy__p + .buy__p {
+        margin-top: 23px;
+    }
+    .buy {
+        padding: 60px 0 40px;
+    }
+}
+@media (max-width: 450px) {
+    .buy__h2 {
+        font-size: 28px;
+        letter-spacing: 1.68px;
+    }
+    .buy__header__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .buy__item__content {
+        margin-top: 300px;
+    }
+    .buy__second__img {
+        top: -270px
+    }
+    .buy__item__title {
+        font-size: 20px;
+    }
+    .buy__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .buy__ul {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .buy__p + .buy__p {
+        margin-top: 23px;
+    }
+}
+/* STEPS */
+.steps {
+    margin-bottom: 120px;
+}
+.steps__header {
+    margin-bottom: 40px;
+}
+.steps__h2 {
+    position: relative;
+    color: #DAB56B;
+    text-align: center;
+    font-family:'Playfair Display SC';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 3.6px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.steps__h2::before {
+    content: ''; 
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #DAB56B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.steps__p {
+    color: #333;
+    text-align: center;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%; /* 38.4px */
+    letter-spacing: 0.96px;
+}
+.steps__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 20px;
+}
+.steps__top {
+    display: flex;
+    gap: 40px 20px;
+    height: 100%;
+    
+}
+
+.steps__title {
+    width: 100%;
+    color: #0F135A;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 2.52px;
+}
+.steps__item {
+    width: 50%;
+    padding: 24px;
+    border: 2px solid var(--lfat-color-var-2-accent, #DAB56B);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.steps__row__item {
+    width: 100%;
+    padding:  24px;
+    border: 2px solid var(--lfat-color-var-2-accent, #DAB56B);
+    box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.steps__item__title {
+    color: #DAB56B;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: 1.92px;
+    margin-bottom: 16px;
+}
+.steps__list {
+    display: flex;
+    gap: 40px 20px;
+}
+
+@media (max-width: 1600px) {
+    .steps__title {
+        font-size: 35px;
+    }
+    .steps__item__title {
+        font-size: 26px;
+    }
+    .steps__p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 750px) {
+    .steps__h2 {
+        font-size: 45px;
+    }
+    .steps__item__title {
+        font-size: 24px;
+    }
+    .steps__title {
+        font-size: 30px; 
+    }
+    .steps__p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .steps {
+        margin-bottom: 60px;
+    }
+    .steps__content {
+        gap: 0;
+    }
+    .steps__list {
+        gap: 0;
+    }
+    .steps__title {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .steps__header {
+        margin-bottom: 24px;
+    }
+    .steps__h2 {
+        font-size: 28px;
+        letter-spacing: 1.68px;
+    }
+    .steps__item__title {
+        font-size: 18px;
+        letter-spacing: 1.08px;
+    }
+    .steps__title {
+        font-size: 24px;
+        letter-spacing: 1.44px; 
+    }
+    .steps__p {
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+}
