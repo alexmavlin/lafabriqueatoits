@@ -26,6 +26,7 @@ box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.04);
         height: unset !important;
         aspect-ratio: 1 / 0.802;
         margin-bottom: 8px;
+        object-fit: cover;
     }
     &__item--date {
         font-family: 'Avenir LT Std';

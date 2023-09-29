@@ -1,4 +1,4 @@
-<table>
+<table class="supply__table">
     <caption style="margin-bottom:15px;">{!! $data['content']->p_items_desc !!}</caption>
     <thead>
         <tr>
@@ -13,13 +13,13 @@
             <td>Antony</td>
             <td>5527 €</td>
             <td>5896 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'antony') }}" title="chasseur immobilier d'appartement et maison Anthony">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'antony') }}" title="chasseur immobilier d'appartement et maison Anthony">→</a></td>
         </tr>
         <tr>
             <td>Asnières-sur-Seine</td>
             <td>7214 €</td>
             <td>8617 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'asnieres-sur-seine') }}" title="chasseur immobilier d'appartement et maison Asnières-sur-Seine">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'asnieres-sur-seine') }}" title="chasseur immobilier d'appartement et maison Asnières-sur-Seine">→</a></td>
         </tr>
         <tr>
             <td>Bagneux</td>
@@ -31,13 +31,13 @@
             <td>Bois-Colombes</td>
             <td>7071 €</td>
             <td>7899 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'bois-colombes') }}" title="chasseur immobilier d'appartement et maison Bois Colombes">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'bois-colombes') }}" title="chasseur immobilier d'appartement et maison Bois Colombes">→</a></td>
         </tr>
         <tr>
             <td>Boulogne-Billancourt</td>
             <td>8946 €</td>
             <td>10875 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'boulogne-billancourt') }}" title="chasseur immobilier d'appartement et maison Boulogne Billancourt">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'boulogne-billancourt') }}" title="chasseur immobilier d'appartement et maison Boulogne Billancourt">→</a></td>
         </tr>
         <tr>
             <td>Châtenay-Malabry</td>
@@ -49,7 +49,7 @@
             <td>Châtillon</td>
             <td>6275 €</td>
             <td>7016 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'chatillon') }}" title="chasseur immobilier d'appartement et maison Chatillon">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'chatillon') }}" title="chasseur immobilier d'appartement et maison Chatillon">→</a></td>
         </tr>
         <tr>
             <td>Chaville</td>
@@ -67,19 +67,19 @@
             <td>Clichy</td>
             <td>7521 €</td>
             <td>8678 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'clichy') }}" title="chasseur immobilier d'appartement et maison Clichy">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'clichy') }}" title="chasseur immobilier d'appartement et maison Clichy">→</a></td>
         </tr>
         <tr>
             <td>Colombes</td>
             <td>5455 €</td>
             <td>7153 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'colombes') }}" title="chasseur immobilier d'appartement et maison Colombes">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'colombes') }}" title="chasseur immobilier d'appartement et maison Colombes">→</a></td>
         </tr>
         <tr>
             <td>Courbevoie</td>
             <td>7534 €</td>
             <td>9510 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'courbevoie') }}" title="chasseur immobilier d'appartement et maison Courbevoie">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'courbevoie') }}" title="chasseur immobilier d'appartement et maison Courbevoie">→</a></td>
         </tr>
         <tr>
             <td>Fontenay-aux-Roses</td>
@@ -91,13 +91,13 @@
             <td>Garches</td>
             <td>6330 €</td>
             <td>8415 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'garches') }}" title="chasseur immobilier d'appartement et maison Garches">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'garches') }}" title="chasseur immobilier d'appartement et maison Garches">→</a></td>
         </tr>
         <tr>
             <td>La Garenne-Colombes</td>
             <td>7095 €</td>
             <td>8976 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'la-garenne-colombes') }}" title="chasseur immobilier d'appartement et maison La Garenne Colombes">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'la-garenne-colombes') }}" title="chasseur immobilier d'appartement et maison La Garenne Colombes">→</a></td>
         </tr>
         <tr>
             <td>Gennevilliers</td>
@@ -109,13 +109,13 @@
             <td>Issy-les-Moulineaux</td>
             <td>8756 €</td>
             <td>9907 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'issy-les-moulineaux') }}" title="chasseur immobilier d'appartement et maison Issy les Moulineaux">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'issy-les-moulineaux') }}" title="chasseur immobilier d'appartement et maison Issy les Moulineaux">→</a></td>
         </tr>                                                    
         <tr>
             <td>Levallois-Perret</td>
             <td>9706 €</td>
             <td>9717 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'levallois-perret') }}" title="chasseur immobilier d'appartement et maison Levallois Perret">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'levallois-perret') }}" title="chasseur immobilier d'appartement et maison Levallois Perret">→</a></td>
         </tr>
         <tr>
             <td>Malakoff</td>
@@ -139,13 +139,13 @@
             <td>Nanterre</td>
             <td>5608 €</td>
             <td>6560 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'nanterre') }}" title="chasseur immobilier d'appartement et maison Nanterre">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'nanterre') }}" title="chasseur immobilier d'appartement et maison Nanterre">→</a></td>
         </tr>
         <tr>
             <td>Neuilly-sur-Seine</td>
             <td>11409 €</td>
             <td>13432 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'neuilly-sur-seine') }}" title="chasseur immobilier d'appartement et maison Neuilly sur Seine">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'neuilly-sur-seine') }}" title="chasseur immobilier d'appartement et maison Neuilly sur Seine">→</a></td>
         </tr>
         <tr>
             <td>Le Plessis-Robinson</td>
@@ -157,19 +157,19 @@
             <td>Puteaux</td>
             <td>8000 €</td>
             <td>9467 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'puteaux') }}" title="chasseur immobilier d'appartement et maison Puteaux">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'puteaux') }}" title="chasseur immobilier d'appartement et maison Puteaux">→</a></td>
         </tr>
         <tr>
             <td>Rueil-Malmaison</td>
             <td>6080 €</td>
             <td>7417 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'rueil-malmaison') }}" title="chasseur immobilier d'appartement et maison Reuil Malmaison">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'rueil-malmaison') }}" title="chasseur immobilier d'appartement et maison Reuil Malmaison">→</a></td>
         </tr>
         <tr>
             <td>Saint-Cloud</td>
             <td>7553 €</td>
             <td>9996 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'saint-cloud') }}" title="chasseur immobilier d'appartement et maison Saint-Cloud">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'saint-cloud') }}" title="chasseur immobilier d'appartement et maison Saint-Cloud">→</a></td>
         </tr>
         <tr>
             <td>Sceaux</td>
@@ -181,19 +181,19 @@
             <td>Sèvres</td>
             <td>6341 €</td>
             <td>8292 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'sevres') }}" title="chasseur immobilier d'appartement et maison Sèvres">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'sevres') }}" title="chasseur immobilier d'appartement et maison Sèvres">→</a></td>
         </tr>
         <tr>
             <td>Suresnes</td>
             <td>7349 €</td>
             <td>8398 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'suresnes') }}" title="chasseur immobilier d'appartement et maison Suresnes">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'suresnes') }}" title="chasseur immobilier d'appartement et maison Suresnes">→</a></td>
         </tr>
         <tr>
             <td>Vanves</td>
             <td>7217 €</td>
             <td>9115 €</td>
-            <td><a href="{{ route('chasseur.item.show', 'vanves') }}" title="chasseur immobilier d'appartement et maison Vanves">En savoir +</a></td>
+            <td><a href="{{ route('chasseur.item.show', 'vanves') }}" title="chasseur immobilier d'appartement et maison Vanves">→</a></td>
         </tr>
         <tr>
             <td>Vaucresson</td>

@@ -10,8 +10,19 @@ use Illuminate\Support\Facades\App;
 
 class IndexController extends Controller
 {
+    private $category;
+    private $period;
+    private $blogs;
+
     public function __invoke()
     {
+        $this->category = request()->get('category');
+        $this->period = request()->get('period');
+        $this->blogs = Blog::query();
+
+        $this->filterBlogsByCategory();
+        $this->filterBlogsByPeriod();
+
         /* Response data */
         $data = [
             "meta" => [
@@ -26,12 +37,8 @@ class IndexController extends Controller
                     'https://fonts.googleapis.com',
                     'https://fonts.gstatic.com',
                 ],
-                "links" => [
-                    'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css',
-                ],
-                "scripts" => [
-                    'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js',
-                ],
+                "links" => [],
+                "scripts" => [],
             ],
             'breadcrumbs' => [
                 [
@@ -40,17 +47,46 @@ class IndexController extends Controller
                     'name' => 'Actualités',
                 ],  
             ],
-            'main_heading' => 'Actualités de notre agence immobilière à Paris et Ile de France  ',
-            'main_img' => 'immobilier-neuf-ile-de-france-min.webp',
-            'blogs' => Blog::orderBy('id', 'DESC')->paginate(10),
-            'selected_blogs' => Blog::where('is_selected', 1)->limit(2)->get(),
+            'main_preheading' => "",
+            'main_heading' => 'Naviguer sur le marché immobilier Parisien et Francilien',
+            'main_img' => 'blog_index.webp',
+            'main_reverse' => false,
+            'main_full_filter' => false,
+            'main_no_filter' => true,
+            'main_form' => false,
+            'blogs' => $this->respondWithBlogs(),
             'habitations' => null,
             'habitation_json' => null,
             'departments' => null,
-            'categories' => Category::with('blogs')->get(),
+            'categories' => Category::all(),
         ];
         // dd($data);
 
-        return view('pages.blog.index', compact('data'));
+        return view('redesign.pages.blog.index', compact('data'));
+    }
+
+    private function respondWithBlogs()
+    {
+        return $this->blogs->orderBy('id', 'DESC')->paginate(9);
+    }
+
+    private function filterBlogsByCategory()
+    {
+        if ($this->category)
+        {
+            $filterValue = $this->category;
+            $this->blogs->whereHas('category', function($q) use ($filterValue){
+                $q->where('slug_name', $filterValue);
+            });
+        }
+    }
+
+    private function filterBlogsByPeriod()
+    {
+        if ($this->period)
+        {
+            $filterValue = date('Y-m-d\TH:i:s', (time() - $this->period * 24 * 60 * 60));
+            $this->blogs->where('created_at', '>', $filterValue);
+        }
     }
 }

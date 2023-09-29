@@ -23,6 +23,8 @@
 @import "page_parts/_aboutInvest.scss";
 @import "page_parts/contact-form-main";
 @import "page_parts/whereToInvest2";
+@import "page_parts/supply-table";
+@import "page_parts/marketing_blocks";
 
 /* Pages */
 @import "pages/acheter-appartement-paris-ile-de-france";
@@ -30,4 +32,10 @@
 @import "pages/agence-immobiliere-hauts-de-seine-92.scss";
 @import "pages/equipe-chasseur-maison-appartement-ile-de-france.scss";
 @import "pages/immobilier-neuf-ile-de-france";
-@import "pages/listing-page.scss"
+@import "pages/listing-page.scss";
+@import "pages/chasseur-immobilier.scss";
+@import "pages/chasseur-immobilier-item.scss";
+@import "pages/immo-neuf.scss";
+@import "pages/vendre-page.scss";
+@import "pages/blog-index.scss";
+@import "pages/blog-show.scss";

@@ -19,6 +19,12 @@
     &__inner {
         display: flex;
         align-items: center;
+        &.text-center {
+            .main__content {
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
         &.active {
             flex-direction: row-reverse;
             .main__content {
@@ -156,7 +162,7 @@
         opacity: 0.6;
         background: #0B0E3D;
         left: 0;
-        top: -1000px;
+        top: -500px;
         z-index: 0;
     }
     &__p1,
@@ -223,6 +229,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        pointer-events: none;
     }
     &__slider--wrapper__img--filter__num {
         color: #FFF;
@@ -283,6 +290,9 @@
     top: 50%;
     left: -140px;
     transform: translateY(-50%);
+}
+.slick-slide {
+    height: 650px;
 }
 .slick-prev.slick-arrow {
     background: transparent;

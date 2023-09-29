@@ -245,6 +245,12 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="custom-form">
+                            <img    src="{{ $data['blog']->image ? asset('images/content/blog/' . $data['blog']->image) : asset('images/content/blog/no_img.jpg') }}" 
+                                    alt="{{ $data['blog']->alt }}"
+                                    width="200"
+                                    height="150"
+                                    style="object-fit:cover;margin-bottom:25px;">
+
                             <div class="pass-input-wrap fl-wrap">
                                 <label>Image</label>
                                 @error('image')
@@ -290,6 +296,11 @@
                         </div>
 
                         <div class="custom-form">
+                            <img    src="{{ $data['blog']->img_content ? asset('images/content/blog/' . $data['blog']->img_content) : asset('images/content/blog/no_img.jpg') }}" 
+                                    alt="{{ $data['blog']->alt }}"
+                                    width="200"
+                                    height="150"
+                                    style="object-fit:cover;margin-bottom:25px;">
                             <div class="pass-input-wrap fl-wrap">
                                 <label>Image contenu</label>
                                 @error('img_content')
@@ -312,29 +323,77 @@
                             </div>
                         </div>
                         @for ($i = 2; $i <= 15; $i++)
-                        <div class="custom-form">
-                            <div class="pass-input-wrap fl-wrap">
-                                <label>Titre <?php echo $i ?> (H3)</label>
-                                @error('h3_title_{{ $i }}')
-                                    <p class="text-danger">{{ $message }}</p>
-                                @enderror
-                                <input  type="text" 
-                                        class="text-input" 
-                                        name="h3_title_{{ $i }}"
-                                        value="{{ old('h3_title_' . $i) ? old('h3_title_' . $i) : $data['blog']['h3_title_' . $i] }}">
+
+                            <!-- H3 Title -->
+                            <div class="custom-form">
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Titre <?php echo $i ?> (H3)</label>
+                                    @error('h3_title_{{ $i }}')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                    <input  type="text" 
+                                            class="text-input" 
+                                            name="h3_title_{{ $i }}"
+                                            value="{{ old('h3_title_' . $i) ? old('h3_title_' . $i) : $data['blog']['h3_title_' . $i] }}">
+                                </div>
                             </div>
-                        </div>
-                        <div class="custom-form">
-                            <div class="pass-input-wrap fl-wrap">
-                                <label>Contenu <?php echo $i ?></label>
-                                @error('content_{{ $i }}')
-                                    <p class="text-danger">{{ $message }}</p>
-                                @enderror
-                                <textarea name="content_{{ $i }}">
-                                    {{ old('content_' . $i) ? old('content_' . $i) : $data['blog']['content_' . $i] }}
-                                </textarea>
+
+                            <!-- Description -->
+                            <div class="custom-form">
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Description <?php echo $i ?></label>
+                                    @error('description_{{ $i }}')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                    <input  type="text" 
+                                            class="text-input" 
+                                            name="description_{{ $i }}"
+                                            value="{{ old('description_' . $i) ? old('description_' . $i) : $data['blog']['description_' . $i] }}">
+                                </div>
                             </div>
-                        </div>
+
+                            <!-- Content -->
+                            <div class="custom-form">
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Contenu <?php echo $i ?></label>
+                                    @error('content_{{ $i }}')
+                                        <p class="text-danger">{{ $message }}</p>
+                                    @enderror
+                                    <textarea name="content_{{ $i }}">
+                                        {{ old('content_' . $i) ? old('content_' . $i) : $data['blog']['content_' . $i] }}
+                                    </textarea>
+                                </div>
+                            </div>
+
+                            <!-- Images -->
+                            <div class="col-md-12">
+                                <img    src="{{ $data['blog']['img_content_' . $i] ? asset('images/content/blog/' . $data['blog']['img_content_' . $i]) : asset('images/content/blog/no_img.jpg') }}" 
+                                        alt="{{ $data['blog']->alt }}"
+                                        width="200"
+                                        height="150"
+                                        style="object-fit:cover;margin-bottom:25px;">
+                                <div class="custom-form">
+                                    <div class="pass-input-wrap fl-wrap">
+                                        <label>Image {{ $i }}</label>
+                                        @error('img_content_{{ $i }}')
+                                            <p class="text-danger">{{ $message }}</p>
+                                        @enderror
+                                        <input type="file" name="img_content_{{ $i }}"/>
+                                    </div>
+                                </div>
+                                <div class="custom-form">
+                                    <div class="pass-input-wrap fl-wrap">
+                                        <label>Image {{ $i }} Alt</label>
+                                        @error('img_alt_{{ $i }}')
+                                            <p class="text-danger">{{ $message }}</p>
+                                        @enderror
+                                        <input  type="text" 
+                                                class="text-input" 
+                                                name="img_alt_{{ $i }}"
+                                                value="{{ old('img_alt_' . $i) ? old('img_alt_' . $i) : $data['blog']['img_alt_' . $i] }}">
+                                    </div>
+                                </div>
+                            </div>
                         @endfor
                     </div>
                 </div>

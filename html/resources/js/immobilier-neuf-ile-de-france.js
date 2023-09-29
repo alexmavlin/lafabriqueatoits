@@ -63,8 +63,20 @@
     if (priceRangePicker) {
         let rangeInput = document.querySelectorAll('#searchForm__rangeGroup > input')
         let progress = document.querySelector('#searchForm__sliderTrack--progress')
+        
+        let minValSpan = document.querySelector('#searchForm__rangeGroup--minValue')
+        let maxValSpan = document.querySelector('#searchForm__rangeGroup--maxValue')
+        
+        minValSpan.textContent = '€ ' + parseInt(rangeInput[0].value).toLocaleString({style: 'decimal', useGrouping: true, maximumFractionDigits: 0})
+        maxValSpan.textContent = '€ ' + parseInt(rangeInput[1].value).toLocaleString({style: 'decimal', useGrouping: true, maximumFractionDigits: 0})
+
+        let minVal = parseInt(rangeInput[0].value)
+        let maxVal = parseInt(rangeInput[1].value)
+        progress.style.left = (minVal / rangeInput[0].max) * 100 + "%"
+        progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%"
 
         rangeInput.forEach(input => {
+
             input.addEventListener("input", (e) => {
                 let minVal = parseInt(rangeInput[0].value),
                 maxVal = parseInt(rangeInput[1].value)
@@ -81,9 +93,6 @@
                     progress.style.left = (minVal / rangeInput[0].max) * 100 + "%"
                     progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%"
                 }
-
-                let minValSpan = document.querySelector('#searchForm__rangeGroup--minValue')
-                let maxValSpan = document.querySelector('#searchForm__rangeGroup--maxValue')
 
                 minValSpan.textContent = '€ ' + parseInt(rangeInput[0].value).toLocaleString({style: 'decimal', useGrouping: true, maximumFractionDigits: 0})
                 maxValSpan.textContent = '€ ' + parseInt(rangeInput[1].value).toLocaleString({style: 'decimal', useGrouping: true, maximumFractionDigits: 0})

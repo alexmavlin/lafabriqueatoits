@@ -21,10 +21,7 @@ class VendreAcheterBienImmobilierParisIleDeFranceController extends Controller
                     asset('css/app.css'),
                 ],
                 "prefetches" => [],
-                "preconnects" => [
-                    'https://fonts.googleapis.com',
-                    'https://fonts.gstatic.com',
-                ],
+                "preconnects" => [],
                 "links" => [],
                 "scripts" => [],
             ],
@@ -32,11 +29,13 @@ class VendreAcheterBienImmobilierParisIleDeFranceController extends Controller
                 [
                     'url' => route('vendreAcheterBienImmobilierParisIleDeFrance'),
                     'title' => 'Double projet immobilier',
-                    'name' => 'Double Projet : Achat et Vente',
+                    'name' => 'Chasse Immobilière Paris et Ile de France',
                 ],
             ],
-            'main_heading' => 'Double Projet : Acheter son nouveau chez-soi et Vendre bien actuel en toute sérénité',
-            'main_img' => 'double-projet-chasseur-immo-min.webp',
+            'main_preheading' => "",
+            'main_heading' => 'Double Projet, double bonheur! Transformez vos rêves immobiliers en réalité, avec style!',
+            'main_img' => 'vendre-main.webp',
+            'main_reverse' => true,
             'blogs' => null,
             'habitations' => null,
             'departments' => null,
@@ -44,6 +43,6 @@ class VendreAcheterBienImmobilierParisIleDeFranceController extends Controller
             'investir' => true,
         ];
 
-        return view('pages.vendre-acheter-bien-immobilier-paris-ile-de-france', compact('data'));
+        return view('redesign.pages.vendre-acheter-bien-immobilier-paris-ile-de-france', compact('data'));
     }
 }

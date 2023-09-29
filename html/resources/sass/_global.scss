@@ -264,3 +264,15 @@ img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
         }
     }
 }
+
+/* Margins */
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+    .mb-80 {
+        margin-bottom: 40px;
+    }
+}
+/* // Margins */

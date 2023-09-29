@@ -70,7 +70,7 @@ function store_images_for_habitation($validated_data, $habitation) {
             $validated_data['image_' . $i]->move(public_path('uploads/images/habitations'), $file_name);
 
             $store_data = [
-                'src' => $db_file_path,
+                'src' => $file_name,
                 'alt' => isset($validated_data['alt_' . $i]) ? $validated_data['alt_' . $i] : '',
                 'habitations_id' => $habitation->id,
                 'is_first' => $i,

@@ -31,7 +31,7 @@
                                 <div class="post-container fl-wrap">
                                     <article class="post-article fl-wrap">
                                         <div class="list-single-main-media fl-wrap">
-                                            <img src="{{ asset($blog->image) }}" class="respimg img_thumb" alt="{{ $blog->alt }}">
+                                            <img src="{{ asset('images/content/blog/' . $blog->image) }}" class="respimg img_thumb" alt="{{ $blog->alt }}">
                                         </div>
                                         <div class="list-single-main-item fl-wrap block_box">
                                             <h2 class="post-opt-title"><a href="#" title="">{{ $blog->h2_title_cards }}</a></h2>

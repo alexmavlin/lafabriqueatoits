@@ -13,7 +13,8 @@ class ImmoNeufController extends Controller
 {
     public function __invoke($url_index)
     {
-        $content = ImmoNeuf::where('url_index', $url_index)->first();
+        $content = ImmoNeuf::where('url_index', $url_index)->with('faqs')->first();
+
         // dd($content);
         /* Response data */
         $data = [
@@ -25,10 +26,7 @@ class ImmoNeufController extends Controller
                 "canonical" => request()->url(),
                 "preloads" => [],
                 "prefetches" => [],
-                "preconnects" => [
-                    'https://fonts.googleapis.com',
-                    'https://fonts.gstatic.com',
-                ],
+                "preconnects" => [],
                 "links" => [],
                 "scripts" => [],
             ],
@@ -44,8 +42,10 @@ class ImmoNeufController extends Controller
                     'name' => $content->breadcrumbs_name,
                 ],
             ],
+            'main_preheading' => "",
             'main_heading' => $content->page_title,
-            'main_img' => 'immobilier-neuf.webp',
+            'main_img' => $content->img_main,
+            'main_reverse' => true,
             'blogs' => Blog::where('is_selected', 1)->orderBy('id', 'DESC')->limit(3)->get(),
             'content' => $content,
             'habitations' => Habitation::where('is_selected', 1)->orderBy('id', 'DESC')->limit(3)->get(),
@@ -59,6 +59,6 @@ class ImmoNeufController extends Controller
 
         // dd($data);
 
-        return view('pages.immoneuf.show', compact('data'));
+        return view('redesign.pages.immo-neuf', compact('data'));
     }
 }

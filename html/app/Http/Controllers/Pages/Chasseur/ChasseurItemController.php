@@ -43,15 +43,18 @@ class ChasseurItemController extends Controller
                     'name' => $content->breadcrumbs_name,
                 ],
             ],
+            'main_preheading' => "",
             'main_heading' => $content->main_title,
-            'main_img' => 'chasseur-immobilier-paris-75-min.webp',
+            'main_img' => $content->main_bg,
+            'main_reverse' => true,
             'blogs' => Blog::where('is_selected', 1)->orderBy('id', 'DESC')->limit(3)->get(),
             'content' => $content,
             'habitations' => null,
             'departments' => null,
             'categories' => null, 
         ];
+        //dd($data);
 
-        return view('pages.chasseur.itemshow', compact('data'));
+        return view('redesign.pages.chasseur-immobilier-item', compact('data'));
     }
 }

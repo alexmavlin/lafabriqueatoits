@@ -1,0 +1,135 @@
+/* TABLE */
+.supply__table {
+    border-radius: 24px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 9px 4px;
+    width: 100%;
+    caption {
+        color: #FFF;
+        font-family: 'Avenir LT Std';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; 
+        letter-spacing: 1.92px;
+        text-transform: uppercase;
+        margin: 48px 0px 24px 9px;
+        text-align: left;
+    }
+    thead {
+        th {
+            color: #0B0E3D;
+            text-align: center;
+            font-family: 'Avenir LT Std';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; 
+            letter-spacing: 0.96px;
+            height: 89px;
+            background: #DAB56B;
+        }
+        th:first-child {
+            border-radius: 24px 0 0 0;
+        }
+        th:last-child {
+            border-radius: 0 24px 0 0;
+        }
+    }
+    tbody {
+        tr {
+            td {
+                width: 25%;
+                line-height: 43px;
+                font-size: 16px;
+                a {
+                    text-decoration: none;
+                    color: #0B0E3D;
+                    text-align: center;
+                    font-family: 'Avenir LT Std';
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 132%;
+                }
+            }
+        }
+        tr:nth-child(odd) {
+            td {
+                color: #0B0E3D;
+                text-align: center;
+                font-family: 'Avenir LT Std';
+                font-style: normal;
+                font-weight: 900;
+                background: rgba(241, 241, 241, 0.60);
+            }
+        }
+        tr:nth-child(even) {
+            td {
+                color: #0B0E3D;
+                text-align: center;
+                font-family: 'Avenir LT Std';
+                font-style: normal;
+                font-weight: 900;
+                background: rgba(251, 251, 251, 0.80);
+            }
+        }
+    }
+}
+
+.supply__table__discr {
+    color: #FFF;
+    font-family: 'Avenir LT Std';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+    letter-spacing: 0.96px;
+    margin-top: 24px;
+    margin-left: 9px;
+}
+
+@media (max-width: 1600ppx) {
+    .supply__table caption {
+        font-size: 20px;
+    }
+    .supply__table thead th {
+        font-size: 18px;
+    }
+    .supply__table__discr {
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .supply__table {
+        border-radius: 13px;
+        border-spacing: 4px 2px;
+    }
+    .supply__table thead th:first-child {
+        border-radius: 13px 0 0 0;
+    }
+    .supply__table thead th:last-child {
+        border-radius: 0 13px 0 0;
+    }
+    .supply__table caption {
+        font-size: 12px;
+        letter-spacing: 0.96px;
+        margin: 12px 0;
+    }
+    .supply__table__discr {
+        margin-top: 12px;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+    .supply__table thead th {
+        font-size: 16px;
+        letter-spacing: 0.48px;
+    }
+    .supply__table tbody tr td {
+        font-size: 14px;
+    }
+    .supply__table tbody tr td a  {
+        font-size: 14px;
+    }
+}
