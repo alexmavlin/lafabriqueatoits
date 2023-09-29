@@ -1,0 +1,167 @@
+.marektingBlock {
+    position: relative;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    &.bgGrey {
+        background-color: #EFEFEE;
+    }
+    img {
+        width: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        object-fit: cover;
+    }
+    &__filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: rgba(11, 14, 61, 0.33);
+        &.filterLight {
+            background: rgba(11, 14, 61, 0.17);
+        }
+    }
+    &.marbox1 {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: unset;
+            width: 68.44% !important;
+            object-fit: cover;
+        }
+    }
+    &__inner {
+        display: flex;
+        position: relative;
+        z-index: 3;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-family: 'Playfair Display SC';
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 50.4px */
+            letter-spacing: 2.52px;
+            margin-bottom: 12px;
+            max-width: 615px;
+        }
+        p {
+            font-family: 'Avenir LT Std';
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%; /* 38.4px */
+            letter-spacing: 0.96px;
+            margin-bottom: 40px;
+            max-width: 615px;
+        }
+        a {
+            padding: 24px 40px;
+            border: 1px solid #DAB56B;
+            background: #DAB56B;
+            font-family: 'Avenir LT Std';
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 25.2px */
+            letter-spacing: 2.16px;
+            text-transform: uppercase;
+            max-width: 260px;
+            width: 100%;
+            text-align: center;
+            &.linkWhite {
+                border: 1px solid #ffffff;
+                background: none;
+            }
+        }
+    }
+}
+
+.darkBlue {
+    color: #0B0E3D;
+}
+.darkGrey {
+    color: #595959;
+}
+.white {
+    color: #ffffff;
+}
+.alignRight {
+    margin-left: auto;
+}
+
+
+
+
+@media (max-width: 1600px) {
+    .marektingBlock {
+        min-height: 500px;
+    }
+    .marektingBlock__content h2 {
+        font-size: 35px;
+        max-width: 560px;
+    }
+    .marektingBlock__content p {
+        font-size: 20px;
+        max-width: 560px;
+    }
+    .marektingBlock__content a {
+        font-size: 16px;
+    }
+    .marektingBlock__content a {
+        padding: 18px 30px;
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .marektingBlock.marbox1 img {
+        width: 45% !important;
+    }
+}
+@media (max-width: 950px) {
+    .marektingBlock.marbox1 img {
+        display: none;
+    }
+    .marektingBlock__inner {
+        justify-content: center;
+    }
+    .marektingBlock__content h2 {
+        text-align: center;
+    }
+    .marektingBlock__content p {
+        text-align: center;
+    }
+    .marektingBlock__content a {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .marektingBlock {
+        min-height: 390px;
+    }
+    .marektingBlock__content h2 {
+        font-size: 28px;
+    }
+    .marektingBlock__content p {
+        font-size: 14px;
+    }
+    .marektingBlock__content a {
+        font-size: 12px;
+        max-width: 200px;
+    }
+}

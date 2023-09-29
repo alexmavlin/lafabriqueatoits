@@ -68,6 +68,7 @@
         </div>
     </section>
 
+
     <!-- Why Us Section -->
     <section class="whyUs">
         <div class="container">
@@ -236,6 +237,9 @@
             </div>
         </div>
     </section>
+
+    
+    @include('redesign/marketing_blocks/mb1')
 
     <!-- Where to Invest Section -->
     <section class="whereToInvest" style="padding-top: 120px;">
@@ -409,11 +413,17 @@
         </div>
     </section>
 
+    @include('redesign/marketing_blocks/mb2')
+
     <!-- Housing Widget Section -->
     @include('redesign/page_parts/housing_widget')
 
+    @include('redesign/marketing_blocks/mb3')
+
     <!-- Slider widget -->
     @include('redesign/page_parts/review-slider')
+
+    @include('redesign/marketing_blocks/mb4')
 
     <!-- Home Page FAQ Section -->
     <section class="homePageFAQ" id="faq">
@@ -444,8 +454,12 @@
         </div>
     </section>
 
+    @include('redesign/marketing_blocks/mb6')
+
     <!-- Blog Widget Section -->
     @include('redesign/page_parts/blog-widget')
+
+    @include('redesign/marketing_blocks/mb8')
     
 </main>
 @endsection

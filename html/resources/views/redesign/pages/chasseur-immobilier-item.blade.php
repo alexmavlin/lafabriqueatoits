@@ -141,31 +141,6 @@
         </section>
     @endif
 
-    <!-- Section Statistics -->
-    @if (isset($data['content']['statistics_h2_1']) && $data['content']['statistics_h2_1'])
-        <section class="statistic">
-            <div class="container">
-                <div class="statistic__inner">
-                    <h2 class="statistic__h2">{{ $data['content']['statistics_h2_1']}}</h2>
-                    <div class="statistic__content">
-                        <div class="statistic__item">
-                            {!! $data['content']['statistics_h3_1'] !!}
-                            {!! $data['content']['statistics_p_1'] !!}
-                        </div>
-                        <div class="statistic__item">
-                            {!! $data['content']['statistics_h3_2'] !!}
-                            {!! $data['content']['statistics_p_2'] !!}
-                        </div>
-                        <div class="statistic__item">
-                            {!! $data['content']['statistics_h3_3'] !!}
-                            {!! $data['content']['statistics_p_3'] !!}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    @endif
-
     <!-- Slider widget -->
     @include('redesign/page_parts/review-slider')
 

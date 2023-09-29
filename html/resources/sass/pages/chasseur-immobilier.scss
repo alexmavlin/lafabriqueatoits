@@ -61,7 +61,8 @@
 }
 
 @media (max-width: 1550px) {
-    .hunter__p {
+    .hunter__p,
+    .hunter__ul li {
         font-size: 20px;
     }
 }
@@ -95,7 +96,8 @@
     .hunter__h1 {
         font-size: 36px;
     }
-    .hunter__p {
+    .hunter__p,
+    .hunter__ul li {
         font-size: 16px;
     }
     .property__hunter__img {
@@ -117,7 +119,8 @@
         font-weight: 700;
         letter-spacing: 2.16px;
     }
-    .hunter__p {
+    .hunter__p,
+    .hunter__ul li {
         font-size: 14px;
         font-style: normal;
         font-weight: 300;

@@ -34,13 +34,18 @@
 }
 
 
-.chasseurItemProperty__p {
+.chasseurItemProperty__p,
+.chasseurItemProperty__ul li {
     font-family: 'Avenir LT Std';
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
+}
+.chasseurItemProperty__ul li {
+    list-style: disc;
+    list-style-position: inside;
 }
 .chasseurItemProperty__p + .chasseurItemProperty__p {
     margin-top: 40px;
@@ -50,7 +55,8 @@
     .chasseurItemProperty  {
         padding-bottom: 120px;
     }
-    .chasseurItemProperty__p {
+    .chasseurItemProperty__p,
+    .chasseurItemProperty__ul li {
         font-size: 20px;
     }
 }
@@ -59,16 +65,14 @@
     .chasseurItemProperty__h2 {
         font-size: 50px;
     }
-    .chasseurItemProperty__p {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 890px) {
     .chasseurItemProperty__h2 {
         font-size: 40px;
     }
-    .chasseurItemProperty__p {
+    .chasseurItemProperty__p,
+    .chasseurItemProperty__ul li {
         font-size: 16px;
     }
     .chasseurItemProperty__p + .chasseurItemProperty__p {
@@ -86,7 +90,8 @@
         font-weight: 700;
         letter-spacing: 1.68px; 
     }
-    .chasseurItemProperty__p {
+    .chasseurItemProperty__p,
+    .chasseurItemProperty__ul li {
         font-size: 14px;
         font-weight: 300;
         letter-spacing: 0.56px;    
@@ -189,6 +194,9 @@
     letter-spacing: 0.96px;
     margin-left: 16px;
 }
+.offer__ul {
+    margin-top: 40px;
+}
 .offer__ul li {
     margin-left: 36px;
     list-style: disc;
@@ -261,6 +269,9 @@
         letter-spacing: 1.2px;
     }
     .offer__p + .offer__p {
+        margin-top: 23px;
+    }
+    .offer__ul {
         margin-top: 23px;
     }
     .offer__p,

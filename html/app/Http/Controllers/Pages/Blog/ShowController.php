@@ -11,6 +11,7 @@ class ShowController extends Controller
 {
     public function __invoke($category)
     {
+
         $blog_slug = request()->get('blog');
         $blog = Blog::where('slug', $blog_slug)->first();
         //dd($blog);
@@ -40,10 +41,15 @@ class ShowController extends Controller
                     'name' => $blog->title,
                 ],
             ],
-            'main_heading' => 'Programme Immobilier Neuf en Ile de France',
-            'main_img' => 'immobilier-neuf-ile-de-france-min.webp',
-            'blogs' => $blog,
-            'selected_blogs' => Blog::where('is_selected', 1)->limit(2)->get(),
+            'main_preheading' => "",
+            'main_heading' => '',
+            'main_img' => '',
+            'main_reverse' => false,
+            'main_full_filter' => false,
+            'main_no_filter' => true,
+            'main_form' => false,
+            'blog' => $blog,
+            'selected_blogs' => Blog::where('is_selected', 1)->limit(3)->get(),
             'habitations' => null,
             'habitation_json' => null,
             'departments' => null,
@@ -51,6 +57,6 @@ class ShowController extends Controller
         ];
         // dd($data);
 
-        return view('pages.blog.show', compact('data'));
+        return view('redesign.pages.blog.show', compact('data'));
     }
 }

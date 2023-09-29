@@ -224,6 +224,9 @@
     font-weight: 300;
     line-height: 160%; /* 38.4px */
     letter-spacing: 0.96px;
+    & + .bank__p {
+        margin-top: 24px;
+    }
 }
 @media(max-width: 1600px) {
     .bank__p {
